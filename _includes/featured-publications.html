@@ -1,0 +1,25 @@
+{% include base_path %}
+
+<div class="featured-publications">
+  {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+  {% for pub in sorted_pubs limit:3 %}
+    <div class="pub-item mb-6">
+      <div class="pub-image mb-4">
+        {% if pub.image %}
+          <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}" class="w-full rounded-lg shadow-md" />
+        {% else %}
+          <img src="{{ base_path }}/images/publication-placeholder.jpg" alt="{{ pub.title }}" class="w-full rounded-lg shadow-md" />
+        {% endif %}
+      </div>
+      <div class="pub-content">
+        <p class="pub-venue mb-1">[{{ pub.venue }}]</p>
+        <p class="pub-title font-semibold mb-1">{{ pub.title }}</p>
+        <p class="pub-excerpt mb-2">{{ pub.excerpt | strip_html | truncate:150 }}</p>
+        <p class="pub-links mb-0">
+          {% if pub.paperurl %}<a href="{{ pub.paperurl }}" class="pub-link mr-4">Paper</a>{% endif %}
+          <a href="{{ pub.url | relative_url }}" class="pub-link">More Info</a>
+        </p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
