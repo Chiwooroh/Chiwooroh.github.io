@@ -46,10 +46,10 @@ In my current and future research, I seek to push the boundary of AI application
 {% include news-feed.html %}
 [View All News](/news/)
 
-## Recent Publications
+<!-- ## Recent Publications
 
 {% include featured-publications.html %}
-[View All Publications](/publications/)
+[View All Publications](/publications/) -->
 
 ## Education
 
