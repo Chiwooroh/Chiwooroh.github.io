@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello, I am Chiwoo Roh, a M.S. student in Transportation Engineering at [Ajou University](https://www.ajou.ac.kr/en/index.do/), South Korea. I work in the [MOVELAB](https://movelab.ajou.ac.kr/) under the supervision of [Prof. Jaehyun (Jason) So](https://movelab.ajou.ac.kr/people/1).
+Hello, I am Chiwoo Roh, a M.S. student in Transportation Engineering at [Ajou University](https://www.ajou.ac.kr/en/), South Korea. I work in the [MOVELAB](https://movelab.ajou.ac.kr/) under the supervision of [Prof. Jaehyun (Jason) So](https://movelab.ajou.ac.kr/people/1).
 
 My research lies at the intersection of <span style="color: #FF8C00;">Artificial Intelligence (AI)</span> and core transportation domains such as <span style="color: #FF8C00;">Traffic Operations</span>, <span style="color: #FF8C00;">Transportation Safety</span>, <span style="color: #FF8C00;">Intelligent Transportation Systems (ITS)</span>.
 
@@ -59,4 +59,3 @@ In my current and future research, I seek to push the boundary of AI application
 
 - B.S., Transportation Systems Engineering  
   Ajou University, 2018–2023  
-  *Graduated with honors*
