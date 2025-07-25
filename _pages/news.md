@@ -33,14 +33,14 @@ author_profile: true
   <li class="news-item-full">
     <h3 class="news-date-full">May 2025</h3>
     <div class="news-content-full">
-      <p>My Research, "<strong>Clustering-Based Aggressive Driving Analysis and LLM-Driven Trajectory Generation</strong>," has been presented at the 2025 Suwon ITS Asia-Pacific Forum and won the "<strong>Excellent Paper Award</strong>"<p>
+      <p>My Research, "<strong>Clustering-Based Aggressive Driving Analysis and LLM-Driven Trajectory Generation</strong>," has been presented at the 2025 Suwon ITS Asia-Pacific Forum and won the "<strong>Excellent Paper Award</strong>"</p>
     </div>
   </li>
 
   <li class="news-item-full">
     <h3 class="news-date-full">February 2025</h3>
     <div class="news-content-full">
-      <p>My Research, "<strong>Personality on the Road Driving Behavior Analysis and Trajectory Generation with LLM</strong>," has been presented at the 92nd Conference of Korean Society of Transportation and won the "<strong>Excellent Paper Award</strong>"<p>
+      <p>My Research, "<strong>Personality on the Road Driving Behavior Analysis and Trajectory Generation with LLM</strong>," has been presented at the 92nd Conference of Korean Society of Transportation and won the "<strong>Excellent Paper Award</strong>"</p>
     </div>
   </li>
 </ul>

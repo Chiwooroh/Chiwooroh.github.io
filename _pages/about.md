@@ -7,11 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-Hello, I am Chiwoo Roh, a Researcher at the Department of Transport Big Data, [Korea Transport Institute (KOTI)](https://www.koti.re.kr/index.do), South Korea. I recently earned my M.S. degree in Transportation Engineering from Ajou University, where I was affiliated with the [MOVELAB](https://movelab.ajou.ac.kr/) under the supervision of [Prof. Jaehyun (Jason) So](https://movelab.ajou.ac.kr/people/1).
+Hello, I am Chiwoo Roh, a Researcher at the Department of Transport Big Data, [Korea Transport Institute (KOTI)](https://www.koti.re.kr/index.do), South Korea. I earned my M.S. degree in Transportation Engineering from Ajou University, where I was affiliated with the [MOVELAB](https://movelab.ajou.ac.kr/) under the supervision of [Prof. Jaehyun (Jason) So](https://movelab.ajou.ac.kr/people/1).
 
 My research lies at the intersection of <span style="color: #FF8C00;">Artificial Intelligence (AI)</span> and core transportation domains such as <span style="color: #FF8C00;">Traffic Operations</span>, <span style="color: #FF8C00;">Transportation Safety</span>, and <span style="color: #FF8C00;">Intelligent Transportation Systems (ITS)</span>.
 
-I am particularly interested in leveraging <span style="color: #FF8C00;">Large Language Models (LLMs)</span> to analyze and generate human-like mobility patterns—ranging from individual driving behaviors to large-scale population movements. My research focuses on integrating diverse data sources such as vehicle trajectory datasets, communication records, and household travel surveys with generative AI techniques. Through this, I aim to understand behavioral patterns across different driver types, simulate risky scenarios in a controlled environment, and predict urban-scale mobility flows. These efforts contribute to enhancing transportation safety, supporting policy decisions for autonomous and human-centered traffic operations, and advancing data-driven national strategies and <span style="color: #FF8C00;">digital twin frameworks</span>.
+I am particularly interested in leveraging <span style="color: #FF8C00;">Large Language Models (LLMs)</span> to analyze and generate human like mobility patterns ranging from individual driving behaviors to large scale population movements. 
+My research focuses on integrating diverse data sources such as vehicle trajectory datasets, communication records, and household travel surveys with generative AI techniques. 
+Through this, I aim to understand behavioral patterns across different driver types, simulate risky scenarios in a controlled environment, and predict urban scale mobility flows. 
 
 My recent work includes:
 - **Vehicle trajectory generation by Driving Behavior** using LLMs,
@@ -19,7 +21,7 @@ My recent work includes:
 - **Simulation-based evaluation of traffic safety risks** in complex roadway environments,
 - **Legal compliance assessment** of AV logic using regulatory indicators.
 
-I am also engaged in national and corporate research projects supported by the Ministry of Land, Infrastructure and Transport, Ministry of Science and ICT, and Hyundai Motor Company—focusing on AI integration in traffic simulation, safety validation, and real-world deployment.
+I am also engaged in national and corporate research projects supported by the Ministry of Land, Infrastructure and Transport, Ministry of Science and ICT, and Hyundai Motor Company focusing on AI integration in traffic simulation, safety validation, and real-world deployment.
 
 ## Research Vision
 
