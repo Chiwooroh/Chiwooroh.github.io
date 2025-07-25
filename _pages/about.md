@@ -19,9 +19,8 @@ Through this, I aim to understand behavioral patterns across different driver ty
 
 My recent work includes:
 - **Vehicle trajectory generation by Driving Behavior** using LLMs,
-- **Human mobility prediction** using LLMs by integrating communication datasets and travel surveys.
-- **Simulation-based evaluation of traffic safety risks** in complex roadway environments,
-- **Legal compliance assessment** of AV logic using regulatory indicators.
+- **Human mobility prediction** using LLMs by integrating communication datasets and travel surveys,
+- **Simulation-based evaluation of traffic safety risks** in complex roadway environments.
 
 I am also engaged in national and corporate research projects supported by the Ministry of Land, Infrastructure and Transport, Ministry of Science and ICT, and Hyundai Motor Company focusing on AI integration in traffic simulation, safety validation, and real-world deployment.
 
@@ -33,7 +32,6 @@ In my current and future research, I seek to push the boundary of AI application
 - 🧭 **LLM-Based Human Mobility Modeling**: How can LLMs capture contextualized, large-scale mobility patterns from communication and survey data to support data-driven policy making?
 - 🚧 **Traffic Safety & Risk Detection**: Can ML/DL models generate or predict high-risk traffic scenarios to support proactive safety evaluation?
 - 📊 **ITS Enhancement**: How can AI-driven modeling improve performance of traffic operations, congestion management, and sensor data fusion?
-- ⚖️ **Policy Compliance & Law-Aware Simulation**: How can AI ensure AVs operate within dynamic legal frameworks and societal expectations?
 
 ---
 
@@ -59,7 +57,7 @@ In my current and future research, I seek to push the boundary of AI application
 
 ## Education
 
-- M.S., Transportation Engineering(Advisor: Prof. Jaehyun So)  
+- M.S., Transportation Engineering (Advisor: Prof. Jaehyun (Jason) So)  
   Ajou University, 2023–2025  
   *Thesis: LLM-Based Contextual Understanding of Real-World Driving Behavior and Realistic Reproduction in Traffic Simulation*
 
