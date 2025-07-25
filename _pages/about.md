@@ -7,14 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-Hello, I am Chiwoo Roh, a M.S. student in Transportation Engineering at [Ajou University](https://www.ajou.ac.kr/en/), South Korea. I work in the [MOVELAB](https://movelab.ajou.ac.kr/) under the supervision of [Prof. Jaehyun (Jason) So](https://movelab.ajou.ac.kr/people/1).
+Hello, I am Chiwoo Roh, a Researcher at the Department of Transport Big Data, [Korea Transport Institute (KOTI)](https://www.koti.re.kr/index.do), South Korea. I recently earned my M.S. degree in Transportation Engineering from Ajou University, where I was affiliated with the [MOVELAB](https://movelab.ajou.ac.kr/) under the supervision of [Prof. Jaehyun (Jason) So](https://movelab.ajou.ac.kr/people/1).
 
-My research lies at the intersection of <span style="color: #FF8C00;">Artificial Intelligence (AI)</span> and core transportation domains such as <span style="color: #FF8C00;">Traffic Operations</span>, <span style="color: #FF8C00;">Transportation Safety</span>, <span style="color: #FF8C00;">Intelligent Transportation Systems (ITS)</span>.
+My research lies at the intersection of <span style="color: #FF8C00;">Artificial Intelligence (AI)</span> and core transportation domains such as <span style="color: #FF8C00;">Traffic Operations</span>, <span style="color: #FF8C00;">Transportation Safety</span>, and <span style="color: #FF8C00;">Intelligent Transportation Systems (ITS)</span>.
 
-I am particularly interested in leveraging <span style="color: #FF8C00;">Large Language Models (LLMs)</span> to analyze and generate human-like driving behaviors, understand behavioral patterns across different driver types, and simulate risky scenarios in a controlled environment. Through these applications, I aim to enhance safety analysis and support decision-making for autonomous vehicle systems and traffic policy design.
+I am particularly interested in leveraging <span style="color: #FF8C00;">Large Language Models (LLMs)</span> to analyze and generate human-like mobility patterns—ranging from individual driving behaviors to large-scale population movements. My research focuses on integrating diverse data sources such as vehicle trajectory datasets, communication records, and household travel surveys with generative AI techniques. Through this, I aim to understand behavioral patterns across different driver types, simulate risky scenarios in a controlled environment, and predict urban-scale mobility flows. These efforts contribute to enhancing transportation safety, supporting policy decisions for autonomous and human-centered traffic operations, and advancing data-driven national strategies and <span style="color: #FF8C00;">digital twin frameworks</span>.
 
 My recent work includes:
-- **Vehicle trajectory generation by Driving Aggressiveness level** using LLMs,
+- **Vehicle trajectory generation by Driving Behavior** using LLMs,
+- **Human mobility prediction** using LLMs by integrating communication datasets and travel surveys.
 - **Simulation-based evaluation of traffic safety risks** in complex roadway environments,
 - **Legal compliance assessment** of AV logic using regulatory indicators.
 
@@ -24,8 +25,9 @@ I am also engaged in national and corporate research projects supported by the M
 
 In my current and future research, I seek to push the boundary of AI applications in transportation by exploring the following questions:
 
-- 🧠 **Driving Behavior Modeling with LLMs**: How can LLMs represent and differentiate driver styles (e.g., aggressive, conservative) through trajectory and control features?
-- 🚧 **Traffic Safety & Risk Detection**: Can LLMs generate or predict high-risk traffic scenarios to support proactive safety evaluation?
+- 🧠 **Driving Behavior Modeling with LLMs**: How can LLMs represent and differentiate driver styles through trajectory and control features?
+- 🧭 **LLM-Based Human Mobility Modeling**: How can LLMs capture contextualized, large-scale mobility patterns from communication and survey data to support data-driven policy making?
+- 🚧 **Traffic Safety & Risk Detection**: Can ML/DL models generate or predict high-risk traffic scenarios to support proactive safety evaluation?
 - 📊 **ITS Enhancement**: How can AI-driven modeling improve performance of traffic operations, congestion management, and sensor data fusion?
 - ⚖️ **Policy Compliance & Law-Aware Simulation**: How can AI ensure AVs operate within dynamic legal frameworks and societal expectations?
 
@@ -36,7 +38,7 @@ In my current and future research, I seek to push the boundary of AI application
 </div>
 
 <div style="padding: 5px 0;">
-  <strong>Feel free to reach out via email <a href="mailto:ncw0509@ajou.ac.kr">ncw0509@ajou.ac.kr</a> — I’d be happy to connect!</strong>
+  <strong>Feel free to reach out via email <a href="mailto:chiuno@koti.re.kr">chiuno@koti.re.kr</a> — I’d be happy to connect!</strong>
 </div>
 
 ---
@@ -54,8 +56,9 @@ In my current and future research, I seek to push the boundary of AI application
 ## Education
 
 - M.S., Transportation Engineering  
-  Ajou University, 2023–present  
+  Ajou University, 2023–2025  
   *Program: Data/Network/AI Convergence, MOVELAB (Advisor: Prof. Jaehyun So)*
+  *Thesis: LLM-Based Contextual Understanding of Real-World Driving Behavior and Realistic Reproduction in Traffic Simulation*
 
 - B.S., Transportation Systems Engineering  
   Ajou University, 2018–2023  

@@ -10,9 +10,37 @@ author_profile: true
 
 <ul class="news-list-full">
   <li class="news-item-full">
+    <h3 class="news-date-full">July 2025</h3>
+    <div class="news-content-full">
+      <p>My paper "<strong>A Hybrid Traffic Crash Risk Analysis Modeling of Crash Data-Driven Analysis and Microscopic Simulations</strong>" has been <strong>accepted</strong> at <strong>The IEEE International Conference on Intelligent Transportation Systems (ITSC) 2025</strong>.</p>
+    </div>
+  </li>
+
+  <li class="news-item-full">
+    <h3 class="news-date-full">July 2025</h3>
+    <div class="news-content-full">
+      <p>Started my position as a <strong>Researcher</strong> at the Department of Transport Big Data, <strong>Korea Transport Institute (KOTI)</strong>, focusing on AI applications in transportation systems and mobility analysis.</p>
+    </div>
+  </li>
+  
+  <li class="news-item-full">
+    <h3 class="news-date-full">May 2025</h3>
+    <div class="news-content-full">
+      <p>Successfully defended my M.S. thesis titled "<strong>LLM-Based Contextual Understanding of Real-World Driving Behavior and Realistic Reproduction in Traffic Simulation</strong>" at Ajou University.</p>
+    </div>
+  </li>
+
+  <li class="news-item-full">
+    <h3 class="news-date-full">May 2025</h3>
+    <div class="news-content-full">
+      <p>My Research, "<strong>Clustering-Based Aggressive Driving Analysis and LLM-Driven Trajectory Generation</strong>," has been presented at the 2025 Suwon ITS Asia-Pacific Forum and won the "<strong>Excellent Paper Award</strong>"<p>
+    </div>
+  </li>
+
+  <li class="news-item-full">
     <h3 class="news-date-full">February 2025</h3>
     <div class="news-content-full">
-      <p>My Research, "<strong>Personality on the Road Driving Behavior Analysis and Trajectory Generation with LLM</strong>," has been presented at the 92nd Conference of Korean Society of Transportation and won the "<strong>Excellent Paper Award</strong>".</p>
+      <p>My Research, "<strong>Personality on the Road Driving Behavior Analysis and Trajectory Generation with LLM</strong>," has been presented at the 92nd Conference of Korean Society of Transportation and won the "<strong>Excellent Paper Award</strong>"<p>
     </div>
   </li>
 </ul>
