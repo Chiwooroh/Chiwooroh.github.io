@@ -12,7 +12,9 @@ Hello, I am Chiwoo Roh, a Researcher at the Department of Transport Big Data, [K
 My research lies at the intersection of <span style="color: #FF8C00;">Artificial Intelligence (AI)</span> and core transportation domains such as <span style="color: #FF8C00;">Traffic Operations</span>, <span style="color: #FF8C00;">Transportation Safety</span>, and <span style="color: #FF8C00;">Intelligent Transportation Systems (ITS)</span>.
 
 I am particularly interested in leveraging <span style="color: #FF8C00;">Large Language Models (LLMs)</span> to analyze and generate human like mobility patterns ranging from individual driving behaviors to large scale population movements. 
+
 My research focuses on integrating diverse data sources such as vehicle trajectory datasets, communication records, and household travel surveys with generative AI techniques. 
+
 Through this, I aim to understand behavioral patterns across different driver types, simulate risky scenarios in a controlled environment, and predict urban scale mobility flows. 
 
 My recent work includes:
@@ -57,9 +59,8 @@ In my current and future research, I seek to push the boundary of AI application
 
 ## Education
 
-- M.S., Transportation Engineering  
+- M.S., Transportation Engineering(Advisor: Prof. Jaehyun So)  
   Ajou University, 2023–2025  
-  *Program: Data/Network/AI Convergence, MOVELAB (Advisor: Prof. Jaehyun So)*
   *Thesis: LLM-Based Contextual Understanding of Real-World Driving Behavior and Realistic Reproduction in Traffic Simulation*
 
 - B.S., Transportation Systems Engineering  
