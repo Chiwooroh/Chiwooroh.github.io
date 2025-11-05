@@ -12,9 +12,9 @@ author_profile: true
   <li class="news-item-full">
     <h3 class="news-date-full">October 2025</h3>
     <div class="news-content-full">
-      <p><strong>Five of my research papers</strong> have been <strong>accepted</strong> for presentation at the <strong>2026 Transportation Research Board (TRB) Annual Meeting</strong> in Washington, D.C.—including <strong>two as first author</strong> and <strong>three as co-author</strong>.</p>
+      <p><strong>Five of my research papers</strong> have been <strong>accepted</strong> for presentation at the <strong>2026 Transportation Research Board (TRB) Annual Meeting</strong> in Washington, D.C. ,including <strong>two as first author</strong> and <strong>three as co-author</strong>.</p>
       <ul>
-        <li><strong>Contextual Modeling of Real-World Driving Behavior with Large Language Models and Realistic Reproduction in Traffic Simulation</strong> (First Author)</li>
+        <li><strong>Contextual Modeling of Real-World Driving Behavior with Large Language Models and Realistic Reproduction in Traffic Simulation</strong> (First Author, Invited for Submission and Under Review in Transportation Research Record(TRR))</li>
         <li><strong>A Hybrid Framework for Traffic Crash Risk Analysis Using Crash Data and Microscopic Simulations</strong> (First Author)</li>
         <li>LiDAR on the Move: Extracting Lane Level Traffic Indicators from Autonomous Vehicles (Co-Author)</li>
         <li>Multi-Modal Trajectory Prediction of Child Pedestrians Using a Unified Transformer Model (Co-Author)</li>
