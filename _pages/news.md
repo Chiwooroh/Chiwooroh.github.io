@@ -10,6 +10,21 @@ author_profile: true
 
 <ul class="news-list-full">
   <li class="news-item-full">
+    <h3 class="news-date-full">October 2025</h3>
+    <div class="news-content-full">
+      <p><strong>Five of my research papers</strong> have been <strong>accepted</strong> for presentation at the <strong>2026 Transportation Research Board (TRB) Annual Meeting</strong> in Washington, D.C.—including <strong>two as first author</strong> and <strong>three as co-author</strong>.</p>
+      <ul>
+        <li><strong>Contextual Modeling of Real-World Driving Behavior with Large Language Models and Realistic Reproduction in Traffic Simulation</strong> (First Author)</li>
+        <li><strong>A Hybrid Framework for Traffic Crash Risk Analysis Using Crash Data and Microscopic Simulations</strong> (First Author)</li>
+        <li>LiDAR on the Move: Extracting Lane Level Traffic Indicators from Autonomous Vehicles (Co-Author)</li>
+        <li>Multi-Modal Trajectory Prediction of Child Pedestrians Using a Unified Transformer Model (Co-Author)</li>
+        <li>Impact Zone Analysis in Traffic Congestion Scenarios using Unsupervised Anomaly Detection (Co-Author)</li>
+      </ul>
+    </div>
+  </li>
+
+  
+  <li class="news-item-full">
     <h3 class="news-date-full">July 2025</h3>
     <div class="news-content-full">
       <p>My paper "<strong>A Hybrid Traffic Crash Risk Analysis Modeling of Crash Data-Driven Analysis and Microscopic Simulations</strong>" has been <strong>accepted</strong> at <strong>The IEEE International Conference on Intelligent Transportation Systems (ITSC) 2025</strong>.</p>
