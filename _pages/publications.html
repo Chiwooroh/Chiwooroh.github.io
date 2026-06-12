@@ -6,21 +6,33 @@ author_profile: true
 ---
 
 <style>
+  /* Accent palette — change --pub-acc to recolor the whole page */
+  .page__content {
+    --pub-acc: #14808a;        /* teal accent (light mode) */
+    --pub-acc-contrast: #fff;
+    --pub-intro-color: #494e52;
+  }
+  html[data-theme="dark"] .page__content {
+    --pub-acc: #4ecbd6;
+    --pub-acc-contrast: #1d2e30;
+    --pub-intro-color: #d4d7d9;
+  }
+
   .pub-intro {
     margin-bottom: 1.5em;
-    color: #494e52;
+    color: var(--pub-intro-color);
   }
   .pub-section h2 {
     margin-top: 1.6em;
     padding-bottom: 0.3em;
-    border-bottom: 2px solid #FF8C00;
+    border-bottom: 2px solid var(--pub-acc);
   }
   .pub-year {
     margin-top: 1.2em;
     margin-bottom: 0.4em;
     font-size: 1em;
     font-weight: 700;
-    color: #FF8C00;
+    color: var(--pub-acc);
     letter-spacing: 0.5px;
   }
   .pub-list {
@@ -36,7 +48,7 @@ author_profile: true
   }
   .pub-list .me {
     font-weight: 700;
-    color: #FF8C00;
+    color: var(--pub-acc);
   }
   .pub-list .venue {
     font-style: italic;
@@ -48,8 +60,8 @@ author_profile: true
     padding: 0.1em 0.55em;
     font-size: 0.78em;
     font-weight: 700;
-    color: #fff;
-    background-color: #FF8C00;
+    color: var(--pub-acc-contrast);
+    background-color: var(--pub-acc);
     border-radius: 10px;
     white-space: nowrap;
   }
@@ -60,8 +72,8 @@ author_profile: true
     padding: 0.1em 0.55em;
     font-size: 0.78em;
     font-weight: 700;
-    color: #FF8C00;
-    border: 1px solid #FF8C00;
+    color: var(--pub-acc);
+    border: 1px solid var(--pub-acc);
     border-radius: 10px;
     white-space: nowrap;
   }
