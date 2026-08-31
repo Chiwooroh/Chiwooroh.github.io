@@ -380,7 +380,7 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 9px;
 }
 
-.interest-card.t-mobility .bar { background: var(--amber); }
+.interest-card.t-av .bar { background: var(--amber); }
 .interest-card.t-safety .bar { background: var(--ink-3); }
 
 .interest-card h3 {
@@ -411,7 +411,7 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 12px;
 }
 
-.thread.t-mobility .bar { background: var(--amber); }
+.thread.t-av .bar { background: var(--amber); }
 .thread.t-safety .bar { background: var(--ink-3); }
 
 .thread h2 {
@@ -426,27 +426,8 @@ img { max-width: 100%; height: auto; }
   margin: 0 0 10px;
 }
 
-.thread > p { margin: 0 0 16px; }
+.thread-main > p { margin: 0 0 16px; }
 .thread .fig { margin: 4px 0 20px; max-width: 380px; }
-
-/* Wide screens split each thread: argument on the left, figure and keywords
-   on the right, so the row fills the shell without 150-character lines. */
-@media (min-width: 900px) {
-  .thread {
-    display: grid;
-    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
-    column-gap: 48px;
-  }
-
-  .thread .bar { grid-column: 1 / -1; grid-row: 1; }
-  .thread h2 { grid-column: 1 / -1; grid-row: 2; }
-  .thread > p { grid-column: 1; grid-row: 3; }
-  .thread .rep-label { grid-column: 1; grid-row: 4; }
-  .thread .rows.rep { grid-column: 1; grid-row: 5; }
-
-  .thread .fig { grid-column: 2; grid-row: 3; width: 100%; max-width: none; margin: 4px 0 0; }
-  .thread .tag-row { grid-column: 2; grid-row: 4 / span 2; align-self: start; margin: 22px 0 0; }
-}
 
 .rep-label {
   font-family: var(--mono);
@@ -479,6 +460,28 @@ img { max-width: 100%; height: auto; }
   border: 1px solid var(--line);
   border-radius: 2px;
   padding: 3px 8px;
+}
+
+/* Wide screens split each thread: argument on the left, figure and keywords
+   on the right, so the row fills the shell without 150-character lines. */
+.thread-main > p:first-child { margin-top: 0; }
+.thread-side .fig { margin: 4px 0 18px; }
+.thread-side .tag-row { margin: 0; }
+
+@media (min-width: 900px) {
+  .thread {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+    column-gap: 48px;
+    align-items: start;
+  }
+
+  .thread .bar,
+  .thread h2 { grid-column: 1 / -1; }
+  .thread-main { grid-column: 1; }
+  .thread-side { grid-column: 2; }
+
+  .thread-side .fig { width: 100%; max-width: none; margin: 4px 0 20px; }
 }
 
 /* ---------- employment ---------- */

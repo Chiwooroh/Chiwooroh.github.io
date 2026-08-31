@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Libre+Franklin:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/styles.css?v=14">
+<link rel="stylesheet" href="assets/styles.css?v=16">
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
@@ -38,83 +38,98 @@
   <main>
 
     <h1 class="page-title" style="margin-top:34px;border:none;padding-bottom:0">Research</h1>
-    <p class="page-lead">My research examines how observed driving and travel behavior can be represented, generated, and evaluated in transportation models. Across driving behavior, human mobility, and traffic safety, I use vehicle trajectories, travel surveys, location-based mobility data, and microscopic traffic simulation to develop and validate behaviorally plausible models. A complete list of publications is available on the <a href="publications.html">Publications</a> page.</p>
+    <p class="page-lead">My research examines how observed driving and travel behavior can be represented, generated, and evaluated in transportation models. Across behavior analysis and mobility synthesis, automated vehicle evaluation, and traffic safety, I use vehicle trajectories, travel surveys, location-based mobility data, sensor observations, and microscopic traffic simulation to develop and validate behaviorally plausible models. A complete list of publications is available on the <a href="publications.html">Publications</a> page.</p>
     <hr class="emp-rule">
 
-    <!-- ============ driving behavior ============ -->
-    <section class="thread t-driving" id="driving-behavior">
+    <!-- ============ LLM-based behavior & mobility ============ -->
+    <section class="thread t-llm" id="llm-behavior-mobility">
       <span class="bar"></span>
-      <h2>Driving Behavior Modeling &amp; Simulation</h2>
-      <p>Vehicle trajectory data provide detailed observations of speed, acceleration, car-following, and lane-changing behavior but do not directly identify latent behavioral states or the effects of surrounding traffic conditions. I use clustering and LLM-based conditional generation to characterize heterogeneous driving patterns and reproduce them in microscopic traffic simulation. The resulting models are evaluated by comparing generated and observed trajectory distributions and traffic-flow characteristics in SUMO and VISSIM.</p>
-
-      <img src="assets/figures/driving-behavior.svg" alt="Vehicle trajectories reproduced from real-world data" class="fig">
-
-      <p class="rep-label">Selected work</p>
-      <ul class="rows rep">
+      <h2>LLM-Based Behavior Analysis &amp; Mobility Synthesis</h2>
+      <div class="thread-main">
+        <p>Analyzing driving and travel behavior and synthesizing individual-level mobility patterns from vehicle trajectories, travel surveys, and location-based data using large language models. Trajectory and survey records document observed movement but do not directly identify the latent behavioral states or the contextual factors behind it. I use clustering and LLM-based conditional generation to characterize heterogeneous driving patterns and to construct individual-level travel chains, and evaluate the results by comparing generated and observed distributions at the trajectory level and at the aggregate travel level.</p>
+        <p class="rep-label">Selected work</p>
+        <ul class="rows rep">
         <li><span>Contextual Modeling of Real-World Driving Behavior with Large Language Models and Realistic Reproduction in Traffic Simulation</span><span class="when">TRB · 2026</span></li>
+        <li><span>Synthesizing Human Mobility Patterns Using Large Language Models — A Sejong City Case Study</span><span class="when">J. KST · 2026</span></li>
         <li><span>A Methodological Framework for Driving Behavior Analysis Based on Real-World Trajectory Data</span><span class="when">IJHE · 2026</span></li>
+        <li><span>Development of a Method for Synthesis of Individual-Level Travel Chains</span><span class="when">KSITS · 2026</span></li>
         <li><span>Personality on the Road: Driving Behavior Analysis and Trajectory Generation <em>(Best Paper)</em></span><span class="when">KST · 2025</span></li>
         <li><span>Clustering-Based Aggressive Driving Analysis and Trajectory Generation <em>(Best Paper)</em></span><span class="when">ITS Asia-Pacific · 2025</span></li>
-        <li><span>Evaluation of Autonomous Vehicle Legal Compliance Using Traffic Simulation</span><span class="when">KSITS · 2023</span></li>
-      </ul>
+        </ul>
+      </div>
 
-      <ul class="tag-row">
+      <aside class="thread-side">
+        <img src="assets/figures/mobility-chain.svg" alt="An individual travel chain: home, work, shop, home" class="fig">
+        <ul class="tag-row">
         <li>Vehicle trajectories</li>
-        <li>Driving behavior heterogeneity</li>
+        <li>Travel surveys</li>
+        <li>Large language models</li>
         <li>Behavioral clustering</li>
-        <li>Microscopic traffic simulation</li>
-        <li>SUMO / VISSIM</li>
-      </ul>
+        <li>Synthetic populations</li>
+        </ul>
+      </aside>
     </section>
 
-    <!-- ============ human mobility ============ -->
-    <section class="thread t-mobility" id="human-mobility">
+    <!-- ============ automated vehicles ============ -->
+    <section class="thread t-av" id="automated-vehicles">
       <span class="bar"></span>
-      <h2>Human Mobility Modeling &amp; Synthesis</h2>
-      <p>I develop individual-level travel chains and synthetic populations using travel survey and location-based mobility data. This work examines how activity sequences, departure times, and destinations can be represented while maintaining consistency with observed travel patterns at the aggregate level. Survey observations and retrieved evidence are used to constrain the generation process, with attention to behavioral fidelity and privacy protection.</p>
+      <h2>Automated Vehicle Simulation &amp; Evaluation</h2>
+      <div class="thread-main">
+        <p>Evaluating automated vehicle behavior, regulatory compliance, and interactions with human-driven vehicles through microscopic traffic simulation. This work implements driving logic that reflects traffic laws and regulations, measures compliance using indicators such as speed limit adherence, and examines merging and cooperative behavior between automated and human-driven vehicles. Simulation-based evaluation allows scenarios that are difficult to observe on the road to be examined under controlled conditions.</p>
+        <p class="rep-label">Selected work</p>
+        <ul class="rows rep">
+        <li><span>Analysis of Automation Level Characteristics of Autonomous Driving Simulation Research</span><span class="when">J. KSITS · 2024</span></li>
+        <li><span>Cooperation and Competition Among Vehicles in Autonomous Driving Merge Scenario</span><span class="when">KSITS · 2024</span></li>
+        <li><span>A Study on Evaluation of Autonomous Vehicle Legal Compliance Using Traffic Simulation</span><span class="when">KSITS · 2023</span></li>
+        <li><span>A Study on Evaluation Indicators for Compliance with Autonomous Vehicle Legislation</span><span class="when">KST · 2023</span></li>
+        <li><span>Development of Self-Driving Vehicle Evaluation Interface Using Traffic Simulation</span><span class="when">KSITS · 2023</span></li>
+        </ul>
+        <p class="rep-label">Patents</p>
+        <ul class="rows rep">
+        <li><span>Method and Apparatus for Regulatory Adaptation of Autonomous Driving Logic</span><span class="when">10-2024-0187517</span></li>
+        <li><span>Autonomous Vehicle Logic Generation Device and Method for Traffic Simulation</span><span class="when">10-2023-0163241</span></li>
+        </ul>
+      </div>
 
-      <img src="assets/figures/mobility-chain.svg" alt="An individual travel chain: home, work, shop, home" class="fig">
-
-      <p class="rep-label">Selected work</p>
-      <ul class="rows rep">
-        <li><span>Synthesizing Human Mobility Patterns Using Large Language Models — A Sejong City Case Study</span><span class="when">J. KST · 2026</span></li>
-        <li><span>Development of a Method for Synthesis of Individual-Level Travel Chains</span><span class="when">KSITS · 2026</span></li>
-        <li><span>Synthesizing Human Mobility Patterns Using Retrieval-Augmented Models</span><span class="when">KST · 2025</span></li>
-      </ul>
-
-      <ul class="tag-row">
-        <li>Travel behavior</li>
-        <li>Travel surveys</li>
-        <li>Travel chains</li>
-        <li>Synthetic populations</li>
-        <li>Privacy-preserving data synthesis</li>
-      </ul>
+      <aside class="thread-side">
+        <img src="assets/figures/driving-behavior.svg" alt="Simulated and observed vehicle trajectories" class="fig">
+        <ul class="tag-row">
+        <li>Automated vehicles</li>
+        <li>Regulatory compliance</li>
+        <li>Vehicle interactions</li>
+        <li>Microscopic traffic simulation</li>
+        <li>SUMO / VISSIM</li>
+        </ul>
+      </aside>
     </section>
 
     <!-- ============ traffic safety ============ -->
     <section class="thread t-safety" id="traffic-safety">
       <span class="bar"></span>
       <h2>Traffic Safety &amp; Operations</h2>
-      <p>My work integrates observed crash data with simulation-derived traffic conflict measures to analyze crash risk under conditions with limited observed outcomes. Crash records provide observed safety outcomes, while microscopic traffic simulation supports the analysis of conflicts and operational conditions that may not be sufficiently represented in historical data. Related research addresses hazardous driving indicators, pedestrian trajectory prediction, and lane-level traffic-state estimation using vehicle-mounted LiDAR.</p>
-
-      <img src="assets/figures/crash-risk.svg" alt="Crash risk estimated over a road network grid" class="fig">
-
-      <p class="rep-label">Selected work</p>
-      <ul class="rows rep">
+      <div class="thread-main">
+        <p>Assessing crash risk, road-user interactions, traffic conditions, and operational performance using crash, trajectory, sensor, and simulation data. Crash records provide observed safety outcomes but are infrequent and lagging, while microscopic traffic simulation supports the analysis of conflicts and operational conditions that may not be sufficiently represented in historical data. Related research addresses pedestrian trajectory prediction, crash severity modeling from structured and unstructured records, and lane-level traffic-state estimation using vehicle-mounted LiDAR.</p>
+        <p class="rep-label">Selected work</p>
+        <ul class="rows rep">
         <li><span>A Hybrid Traffic Crash Risk Analysis Modeling of Crash Data-Driven Analysis and Microscopic Simulations</span><span class="when">IEEE ITSC · 2025</span></li>
         <li><span>A Hybrid Framework for Traffic Crash Risk Analysis Using Crash Data and Microscopic Simulations</span><span class="when">TRB · 2026</span></li>
         <li><span>Predicting Traffic Crash Severity: A BERT-Based Modeling Approach <em>(under review)</em></span><span class="when">AAP · 2026</span></li>
         <li><span>Multi-Modal Trajectory Prediction of Child Pedestrians Using a Unified Transformer Model</span><span class="when">TRB · 2026</span></li>
         <li><span>LiDAR on the Move: Extracting Lane-Level Traffic Indicators from Autonomous Vehicles</span><span class="when">TRB · 2026</span></li>
-      </ul>
+        <li><span>Comparative Analysis of the 3D Object Detection Performance of LiDAR Sensors for Traffic Monitoring</span><span class="when">IJHE · 2024</span></li>
+        </ul>
+      </div>
 
-      <ul class="tag-row">
+      <aside class="thread-side">
+        <img src="assets/figures/crash-risk.svg" alt="Crash risk estimated over a road network grid" class="fig">
+        <ul class="tag-row">
         <li>Crash risk analysis</li>
         <li>Surrogate safety measures</li>
         <li>Traffic conflicts</li>
         <li>Vulnerable road users</li>
         <li>Traffic-state estimation</li>
-      </ul>
+        </ul>
+      </aside>
     </section>
 
     <section class="section" style="margin-top:34px">
