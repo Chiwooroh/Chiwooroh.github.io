@@ -113,5 +113,8 @@ deleted from history.
 - The site is English-only. There is no language toggle.
 - Both light and dark themes are defined at the token level in `:root`. Never write
   a color literal in a component rule — add or reuse a token instead.
-- Every page runs to the same 880px shell (`--w`): section rules and the text under
-  them share one measure, so no page ends short of its own dividers.
+- Every page runs to the same 1160px shell (`--w`) with 32px gutters, 20px on small
+  screens. Section rules and the content under them share one measure.
+- Research threads split into two columns above 900px — argument on the left, figure
+  and keywords on the right — so the wide shell gets used without stretching a
+  paragraph to 150 characters.

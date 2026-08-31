@@ -23,7 +23,7 @@
   --sans: "Libre Franklin", system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  --w: 880px;
+  --w: 1160px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -85,7 +85,13 @@ body {
 .container {
   max-width: var(--w);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 32px;
+}
+
+/* 32px of gutter is a lot of a 375px screen. */
+@media (max-width: 620px) {
+  .container { padding: 0 20px; }
+  .nav-inner { padding: 12px 20px; }
 }
 
 a {
@@ -111,10 +117,10 @@ img { max-width: 100%; height: auto; }
 .nav-inner {
   max-width: var(--w);
   margin: 0 auto;
-  padding: 14px 24px;
+  padding: 14px 32px;
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -170,14 +176,14 @@ img { max-width: 100%; height: auto; }
    affiliation, bio and interest tags stacked on the right. */
 .profile {
   display: flex;
-  gap: 30px;
+  gap: 52px;
   align-items: flex-start;
-  padding: 40px 0 30px;
+  padding: 44px 0 32px;
 }
 
 .profile-media {
   flex: none;
-  width: 260px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -422,6 +428,25 @@ img { max-width: 100%; height: auto; }
 
 .thread > p { margin: 0 0 16px; }
 .thread .fig { margin: 4px 0 20px; max-width: 380px; }
+
+/* Wide screens split each thread: argument on the left, figure and keywords
+   on the right, so the row fills the shell without 150-character lines. */
+@media (min-width: 900px) {
+  .thread {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+    column-gap: 48px;
+  }
+
+  .thread .bar { grid-column: 1 / -1; grid-row: 1; }
+  .thread h2 { grid-column: 1 / -1; grid-row: 2; }
+  .thread > p { grid-column: 1; grid-row: 3; }
+  .thread .rep-label { grid-column: 1; grid-row: 4; }
+  .thread .rows.rep { grid-column: 1; grid-row: 5; }
+
+  .thread .fig { grid-column: 2; grid-row: 3; width: 100%; max-width: none; margin: 4px 0 0; }
+  .thread .tag-row { grid-column: 2; grid-row: 4 / span 2; align-self: start; margin: 22px 0 0; }
+}
 
 .rep-label {
   font-family: var(--mono);
