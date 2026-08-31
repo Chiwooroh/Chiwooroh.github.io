@@ -473,8 +473,10 @@ img { max-width: 100%; height: auto; }
 @media (min-width: 900px) {
   .thread {
     display: grid;
-    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
-    column-gap: 48px;
+    /* The figures are wide diagrams carrying text, so they take the larger
+       share; the paragraph still holds a comfortable 60 characters. */
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+    column-gap: 40px;
     align-items: start;
   }
 

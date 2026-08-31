@@ -67,7 +67,8 @@ You should almost never need to touch HTML.
 - `**Name**` in `authors` renders your own name highlighted with an amber underline
 - `selected: true` puts it in the home page's three-item Selected Publications block
   (only the first three selected entries are shown, in file order)
-- `badge`, `award`, `figure`, and `links` are all optional
+- `award`, `figure` and `links` are optional. `badge` is still accepted in the
+  data but no longer rendered — the venue line and the group heading already say it
 
 ## Still worth replacing
 

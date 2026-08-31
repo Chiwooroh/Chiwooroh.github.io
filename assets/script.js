@@ -143,10 +143,10 @@
     out.push('<p class="pub-authors">' + authors(p.authors) + "</p>");
     out.push('<p class="pub-venue">' + p.venue + ", " + p.year + ".</p>");
 
+    // Only awards get a badge. The venue is already spelled out above, and the
+    // group heading already says which entries are under review.
     var bits = [];
-    if (p.badge) bits.push('<span class="badge">' + p.badge + "</span>");
     if (p.award) bits.push('<span class="badge award">' + p.award + "</span>");
-    if (p.type === "review") bits.push('<span class="badge review">Under review</span>');
     if (p.links) {
       Object.keys(p.links).forEach(function (k) {
         bits.push('<a href="' + p.links[k] + '" target="_blank" rel="noopener">' + k + "</a>");
