@@ -219,9 +219,12 @@
   /* ---------------- projects ---------------- */
   function renderProjects() {
     var el = document.getElementById("project-list");
-    if (!el) return;
+    var stat = document.getElementById("stat-projects");
+    if (!el && !stat) return;
 
     getJSON("data/projects.json", function (data) {
+      if (stat) stat.textContent = data.length;
+      if (!el) return;
       el.innerHTML = data.map(function (p) {
         return '<div class="entry">' +
           "<h3>" + p.title + "</h3>" +
@@ -234,7 +237,7 @@
             "<dt>Role</dt><dd>" + p.role + "</dd>" +
           "</dl></div>";
       }).join("");
-    }, el, "projects");
+    }, el || stat, "projects");
   }
 
   /* ---------------- footer ---------------- */

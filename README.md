@@ -63,6 +63,7 @@ You should almost never need to touch HTML.
 - `type` — `journal` | `conference` | `review`. This drives the home page counters,
   the filter tabs, and the order of the full list: journal articles, then manuscripts
   under review, then conference papers, each sorted by year within its group.
+  The home page's "Research projects" counter comes from `data/projects.json`.
 - `**Name**` in `authors` renders your own name highlighted with an amber underline
 - `selected: true` puts it in the home page's three-item Selected Publications block
   (only the first three selected entries are shown, in file order)
