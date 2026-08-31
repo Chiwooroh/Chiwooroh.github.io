@@ -166,20 +166,18 @@ img { max-width: 100%; height: auto; }
 }
 
 /* ---------- hero ---------- */
+/* The photo stretches to the height of the text beside it, so the two
+   columns end level and no dead space opens up under the image. */
 .profile {
   display: flex;
   gap: 26px;
-  align-items: flex-start;
+  align-items: stretch;
   padding: 38px 0 28px;
 }
 
-@media (max-width: 620px) {
-  .profile { flex-direction: column; gap: 18px; }
-}
-
 .profile-photo {
-  width: 148px;
-  aspect-ratio: 4 / 5;
+  width: 208px;
+  min-height: 260px;
   flex: none;
   border-radius: 3px;
   overflow: hidden;
@@ -194,7 +192,18 @@ img { max-width: 100%; height: auto; }
   color: var(--accent);
 }
 
-.profile-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 42%;
+  display: block;
+}
+
+@media (max-width: 620px) {
+  .profile { flex-direction: column; gap: 18px; align-items: flex-start; }
+  .profile-photo { width: 100%; max-width: 280px; min-height: 0; aspect-ratio: 4 / 5; }
+}
 
 .profile-name {
   font-family: var(--serif);

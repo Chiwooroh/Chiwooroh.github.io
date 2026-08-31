@@ -69,9 +69,10 @@ You should almost never need to touch HTML.
 1. **Publication figures.** `assets/figures/*.svg` are placeholder diagrams drawn to
    stand in for the real thing. Export the actual figures from your papers at roughly
    1200×740 and point each entry's `figure` at them.
-2. **Profile photo.** `assets/profile.jpg` is a 4:5 crop of the mountain photo from
-   the old site. A headshot would read better at 148px wide — drop one in at the same
-   path and nothing else needs to change.
+2. **Profile photo.** `assets/profile.jpg` is a crop of the mountain photo from the
+   old site. In the hero it stretches to match the height of the text beside it, so
+   the two columns end level — a replacement should be a portrait shot with the
+   subject centered horizontally. Drop it in at the same path; no CSS change needed.
 3. **CV.** `assets/Chiwoo_Roh_CV.pdf` is a copy of the August 2026 version. Re-copy it
    whenever the CV changes.
 
