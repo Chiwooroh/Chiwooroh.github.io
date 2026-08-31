@@ -239,16 +239,6 @@
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  var updEl = document.getElementById("last-updated");
-  if (updEl) {
-    var d = new Date(document.lastModified);
-    if (!isNaN(d)) {
-      updEl.textContent = "Last updated " + d.toLocaleDateString("en-US", {
-        year: "numeric", month: "short", day: "numeric"
-      });
-    }
-  }
-
   /* ---------------- go ---------------- */
   renderNews();
   renderPublications();
