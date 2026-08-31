@@ -465,6 +465,8 @@ img { max-width: 100%; height: auto; }
 /* Above 900px the opening paragraph and the figure share a row, and the
    selected work runs the full width beneath them. */
 .thread-lede > p { margin: 0 0 16px; }
+.fig-link { display: block; }
+.fig-link:focus-visible { outline-offset: 4px; }
 .thread-figure .fig { margin: 4px 0 18px; }
 .thread-work .tag-row { margin-top: 18px; }
 
