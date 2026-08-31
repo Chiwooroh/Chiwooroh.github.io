@@ -601,6 +601,13 @@ h3.sub-head:first-of-type { margin-top: 6px; }
   margin: 3px 0 0;
 }
 
+.emp-summary {
+  margin: 9px 0 0;
+  font-size: 14px;
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+
 .emp ul {
   margin: 9px 0 0;
   padding-left: 1.1em;
