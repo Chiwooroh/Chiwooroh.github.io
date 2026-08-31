@@ -6,6 +6,7 @@ Personal academic site — plain static HTML/CSS/JS. No Jekyll, no build step.
 
 ```
 index.html            Home — photo, bio, research interests, news, selected publications, awards, education
+                      (no contact block: the email button and location sit in the hero)
 research.html         Research — three topics, each with a figure and narrative
 publications.html     Full publication list with filter tabs
 employment.html       Research positions and research visits
