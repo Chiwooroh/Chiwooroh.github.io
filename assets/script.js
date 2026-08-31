@@ -49,12 +49,14 @@
     el.addEventListener("click", function () {
       var addr = el.getAttribute("data-email") || el.textContent.trim();
       var done = function () {
-        var was = el.textContent;
+        // Icon buttons only flash; text buttons swap their label.
+        var isIcon = el.querySelector("svg") !== null;
+        var was = isIcon ? null : el.textContent;
         el.classList.add("copied");
-        el.textContent = "Copied";
+        if (!isIcon) el.textContent = "Copied";
         setTimeout(function () {
           el.classList.remove("copied");
-          el.textContent = was;
+          if (!isIcon) el.textContent = was;
         }, 1400);
       };
       if (navigator.clipboard) {

@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Libre+Franklin:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/styles.css?v=4">
+<link rel="stylesheet" href="assets/styles.css?v=5">
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
@@ -62,9 +62,11 @@
     <a href="index.html" aria-current="page">Home</a>
     <a href="research.html">Research</a>
     <a href="publications.html">Publications</a>
+    <a href="employment.html">Employment</a>
     <a href="projects.html">Projects</a>
     <a href="news.html">News</a>
     <span class="nav-spacer"></span>
+    <a class="nav-cv" href="assets/Chiwoo_Roh_CV.pdf?v=2" target="_blank" rel="noopener">CV</a>
     <button id="theme-toggle" class="nav-btn" type="button" aria-label="Toggle dark mode">
       <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
@@ -75,29 +77,39 @@
 <div class="container">
 
   <header class="profile">
-    <div class="profile-photo">
-      <img src="assets/profile.jpg?v=4" alt="Chiwoo Roh">
+    <div class="profile-media">
+      <div class="profile-photo">
+        <img src="assets/profile.jpg?v=4" alt="Chiwoo Roh">
+      </div>
+      <div class="social-row">
+        <button type="button" class="social-btn copy-email" data-email="chiu.roh@gmail.com" aria-label="Copy email address" title="chiu.roh@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </button>
+        <a class="social-btn" href="https://scholar.google.co.kr/citations?user=dwmxOk0AAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+        </a>
+        <a class="social-btn" href="https://orcid.org/0009-0000-4299-4929" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9.1 7.6h1.5v9H9.1zM9.85 5.1a.95.95 0 1 1 0 1.9.95.95 0 0 1 0-1.9zM12.9 7.6h3.3c2.5 0 3.9 1.9 3.9 4.5s-1.6 4.5-4 4.5h-3.2zm1.5 1.4v6.2h1.6c1.8 0 2.6-1.3 2.6-3.1 0-1.9-.9-3.1-2.6-3.1z"/></svg>
+        </a>
+        <a class="social-btn" href="https://github.com/Chiwooroh" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+        </a>
+        <a class="social-btn" href="https://www.linkedin.com/in/chiwooroh" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+      </div>
     </div>
-    <div>
+
+    <div class="profile-body">
       <h1 class="profile-name">Chiwoo Roh</h1>
-      <p class="profile-affil">
-        Researcher in transportation engineering<br>
-        Sejong, Republic of Korea
-      </p>
+      <p class="profile-tagline">Researcher in transportation engineering</p>
+      <p class="profile-location">Sejong, Republic of Korea</p>
 
       <div class="profile-bio">
-        <p>I model how people drive and how they move through a city. My work uses large language models to read real-world trajectory and travel-survey data as <em>behavior</em> — not just as coordinates — and then reproduces that behavior inside traffic simulation, so safety and operations can be tested before they happen.</p>
-        <p>Through 2026 I was a researcher at the <a href="https://www.koti.re.kr/" target="_blank" rel="noopener">Korea Transport Institute (KOTI)</a>, working on individual-level mobility synthesis and privacy-preserving travel data. Before that I completed my M.S. at Ajou University with Prof. Jaehyun So, on autonomous-vehicle legal compliance and driving-behavior modeling.</p>
+        <p>I model how people drive and how they move through a city. My work uses large language models to read real-world trajectory and travel-survey data as <em>behavior</em> — not just as coordinates — and then reproduces that behavior inside <strong>traffic simulation</strong>, so safety and operations can be tested before they happen.</p>
+        <p>Recent work runs along three threads: generating <strong>driving behavior</strong> for microsimulation, synthesizing <strong>individual-level travel chains</strong> from surveys and mobile location data without exposing any real person, and estimating <strong>crash risk</strong> by combining crash records with simulated conflicts.</p>
       </div>
 
-      <div class="profile-links">
-        <a class="primary" href="assets/Chiwoo_Roh_CV.pdf?v=2" target="_blank" rel="noopener">CV (PDF)</a>
-        <button type="button" class="copy-email" data-email="chiu.roh@gmail.com">chiu.roh@gmail.com</button>
-        <a href="https://scholar.google.co.kr/citations?user=dwmxOk0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
-        <a href="https://orcid.org/0009-0000-4299-4929" target="_blank" rel="noopener">ORCID</a>
-        <a href="https://github.com/Chiwooroh" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/chiwooroh" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
     </div>
   </header>
 
@@ -188,6 +200,6 @@
 
 </div>
 
-<script src="assets/script.js?v=2"></script>
+<script src="assets/script.js?v=3"></script>
 </body>
 </html>

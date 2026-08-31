@@ -166,109 +166,135 @@ img { max-width: 100%; height: auto; }
 }
 
 /* ---------- hero ---------- */
-/* The photo stretches to the height of the text beside it, so the two
-   columns end level and no dead space opens up under the image. */
+/* Photo column on the left with the social row beneath it; name, role,
+   affiliation, bio and interest tags stacked on the right. */
 .profile {
   display: flex;
-  gap: 26px;
-  align-items: stretch;
-  padding: 38px 0 28px;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 40px 0 30px;
+}
+
+.profile-media {
+  flex: none;
+  width: 236px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .profile-photo {
-  width: 208px;
-  min-height: 260px;
-  flex: none;
-  border-radius: 3px;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 12px;
   overflow: hidden;
-  border: 1px solid var(--line);
-  background: linear-gradient(150deg, var(--accent-soft), var(--panel-2));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--serif);
-  font-weight: 700;
-  font-size: 32px;
-  color: var(--accent);
+  background: var(--panel-2);
+  box-shadow: 0 4px 12px rgba(16, 23, 32, .12);
+}
+
+:root[data-theme="dark"] .profile-photo { box-shadow: 0 4px 14px rgba(0, 0, 0, .5); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .profile-photo { box-shadow: 0 4px 14px rgba(0, 0, 0, .5); }
 }
 
 .profile-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* The desktop frame is taller than the image, so only the X here matters there.
-     The Y keeps the head in frame when the mobile 4:5 box crops vertically. */
+  /* Keeps the head in frame when the box crops the picture vertically. */
   object-position: 50% 15%;
   display: block;
 }
 
-@media (max-width: 620px) {
-  .profile { flex-direction: column; gap: 18px; align-items: flex-start; }
-  .profile-photo { width: 100%; max-width: 280px; min-height: 0; aspect-ratio: 4 / 5; }
+.social-row {
+  display: flex;
+  gap: 8px;
 }
+
+.social-btn {
+  width: 38px;
+  height: 38px;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-3);
+  cursor: pointer;
+  padding: 0;
+  transition: color .15s, border-color .15s, background .15s;
+}
+
+.social-btn svg { width: 17px; height: 17px; fill: currentColor; display: block; }
+
+.social-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.social-btn.copied { color: var(--amber); border-color: var(--amber); background: var(--amber-soft); }
+
+.profile-body { min-width: 0; }
 
 .profile-name {
   font-family: var(--serif);
   font-weight: 700;
-  font-size: 32px;
-  letter-spacing: -.02em;
-  line-height: 1.15;
+  font-size: 34px;
+  letter-spacing: -.025em;
+  line-height: 1.12;
   color: var(--ink);
   margin: 0;
   text-wrap: balance;
 }
 
-.profile-affil {
-  margin: 7px 0 0;
-  font-size: 14.5px;
+.profile-tagline {
+  margin: 8px 0 0;
+  font-size: 15.5px;
   color: var(--ink-2);
 }
 
-.profile-bio { margin: 14px 0 0; }
+.profile-location {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: var(--ink-3);
+}
+
+.profile-bio { margin: 16px 0 0; }
 .profile-bio p { margin: 0 0 10px; }
 .profile-bio p:last-child { margin-bottom: 0; }
+.profile-bio strong { color: var(--ink); font-weight: 600; }
 
-.profile-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 16px;
+@media (max-width: 620px) {
+  .profile { flex-direction: column; gap: 20px; }
+  .profile-media { width: 100%; max-width: 260px; }
+  .profile-name { font-size: 30px; }
 }
 
-.profile-links a,
-.profile-links button {
+/* ---------- nav CV button ---------- */
+.nav-cv {
   font-family: var(--sans);
   font-size: 12.5px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
-  color: var(--ink-2);
-  background: transparent;
-  border: 1px solid var(--line);
-  border-radius: 3px;
-  padding: 4px 10px;
-  cursor: pointer;
-  transition: color .15s, border-color .15s;
+  color: var(--ground);
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 4px 12px;
+  line-height: 1.5;
 }
 
-.profile-links a:hover,
-.profile-links button:hover { color: var(--accent); border-color: var(--accent); }
-
-.profile-links a.primary { border-color: var(--accent); color: var(--accent); }
-
-.copy-email.copied { color: var(--amber); border-color: var(--amber); }
-
-.copy-inline {
-  font: inherit;
-  color: inherit;
-  background: transparent;
-  border: none;
-  border-bottom: 1px dotted var(--ink-3);
-  padding: 0;
-  cursor: pointer;
+/* `.nav-inner a` sets a colour too, so match its specificity to win. */
+.nav-inner a.nav-cv,
+.nav-inner a.nav-cv:hover {
+  color: var(--ground);
+  border-bottom: 1px solid var(--accent);
 }
 
-.copy-inline:hover { color: var(--accent); border-bottom-color: var(--accent); }
-.copy-inline.copied { color: var(--amber); border-bottom-color: var(--amber); }
+.nav-cv:hover { opacity: .88; }
 
 /* ---------- sections ---------- */
 .section { margin: 34px 0; }
@@ -355,6 +381,89 @@ img { max-width: 100%; height: auto; }
 }
 
 .interest-card p { font-size: 12.5px; color: var(--ink-3); margin: 0; line-height: 1.45; }
+
+/* ---------- employment ---------- */
+.page-lead {
+  margin: -4px 0 0;
+  font-size: 15px;
+  color: var(--ink-3);
+}
+
+.emp-rule {
+  height: 2px;
+  background: var(--accent);
+  border: none;
+  margin: 20px 0 4px;
+}
+
+.emp {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.emp:last-child { border-bottom: none; }
+
+.emp-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.emp-org {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+}
+
+.emp-where,
+.emp-when {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-3);
+  flex: none;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.emp-role {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.emp-role .title {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--ink-2);
+}
+
+.emp-role .title b { color: var(--ink); font-weight: 600; }
+
+.emp-advisor {
+  font-size: 13px;
+  color: var(--ink-3);
+  margin: 3px 0 0;
+}
+
+.emp ul {
+  margin: 9px 0 0;
+  padding-left: 1.1em;
+  font-size: 14px;
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+
+.emp li { margin-bottom: 4px; }
+
+@media (max-width: 560px) {
+  .emp-head, .emp-role { flex-direction: column; gap: 2px; }
+  .emp-where, .emp-when { text-align: left; }
+}
 
 /* ---------- news ---------- */
 .news-list { list-style: none; margin: 0; padding: 0; }
