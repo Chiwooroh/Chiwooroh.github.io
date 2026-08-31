@@ -161,7 +161,7 @@
   // Journal articles first, then manuscripts under review, then conference papers.
   var TYPE_LABEL = {
     journal: "Journal articles",
-    review: "Under review",
+    review: "Manuscripts under review",
     conference: "Conference papers"
   };
 

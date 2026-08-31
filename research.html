@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Libre+Franklin:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/styles.css?v=11">
+<link rel="stylesheet" href="assets/styles.css?v=12">
 <link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
@@ -38,14 +38,14 @@
   <main>
 
     <h1 class="page-title" style="margin-top:34px;border:none;padding-bottom:0">Research</h1>
-    <p class="page-lead">Traffic engineering has long described behavior with parameters — a desired speed, a headway, a gap-acceptance threshold. Real drivers and real travelers do not think in parameters. Across the three threads below the question is the same: can behavior be learned from observation faithfully enough to stand in for the real thing? A full list of the work is on the <a href="publications.html">Publications</a> page.</p>
+    <p class="page-lead">My research examines how observed driving and travel behavior can be represented, generated, and evaluated in transportation models. Across driving behavior, human mobility, and traffic safety, I use vehicle trajectories, travel surveys, location-based mobility data, and microscopic traffic simulation to develop and validate behaviorally plausible models. A complete list of publications is available on the <a href="publications.html">Publications</a> page.</p>
     <hr class="emp-rule">
 
     <!-- ============ driving behavior ============ -->
     <section class="thread t-driving" id="driving-behavior">
       <span class="bar"></span>
       <h2>Driving Behavior Modeling &amp; Simulation</h2>
-      <p>Understanding real-world driving behavior from vehicle trajectories and reproducing it through generative AI and microscopic traffic simulation. Trajectory data records what a vehicle did, not why: two drivers with the same speed profile may be doing entirely different things — one impatient in free flow, the other trapped behind a slow truck. I cluster observed trajectories into behavioral types, describe each type in a form a generative model can condition on, and turn those descriptions back into driving decisions. The generated agents are then placed in SUMO and VISSIM, where the question becomes empirical: does the synthetic population reproduce the distribution of the observed one?</p>
+      <p>Vehicle trajectory data provide detailed observations of speed, acceleration, car-following, and lane-changing behavior but do not directly identify latent behavioral states or the effects of surrounding traffic conditions. I use clustering and LLM-based conditional generation to characterize heterogeneous driving patterns and reproduce them in microscopic traffic simulation. The resulting models are evaluated by comparing generated and observed trajectory distributions and traffic-flow characteristics in SUMO and VISSIM.</p>
 
       <img src="assets/figures/driving-behavior.svg" alt="Vehicle trajectories reproduced from real-world data" class="fig">
 
@@ -60,10 +60,10 @@
 
       <ul class="tag-row">
         <li>Vehicle trajectories</li>
+        <li>Driving behavior heterogeneity</li>
         <li>Behavioral clustering</li>
-        <li>Generative modeling</li>
+        <li>Microscopic traffic simulation</li>
         <li>SUMO / VISSIM</li>
-        <li>Autonomous driving</li>
       </ul>
     </section>
 
@@ -71,7 +71,7 @@
     <section class="thread t-mobility" id="human-mobility">
       <span class="bar"></span>
       <h2>Human Mobility Modeling &amp; Synthesis</h2>
-      <p>Modeling and generating individual-level mobility patterns from travel surveys and location data, with an emphasis on realism and privacy preservation. Individual mobility data is the most useful and the most sensitive dataset in transportation: travel surveys are rich but small, mobile location data is large but blunt, and neither can be released as collected. I generate synthetic individuals — full daily travel chains with plausible activity sequences, timing, and destinations — that hold at the aggregate level without exposing any real person. Conditioning the generator on survey evidence, rather than letting it invent, is what makes the output defensible.</p>
+      <p>I develop individual-level travel chains and synthetic populations using travel survey and location-based mobility data. This work examines how activity sequences, departure times, and destinations can be represented while maintaining consistency with observed travel patterns at the aggregate level. Survey observations and retrieved evidence are used to constrain the generation process, with attention to behavioral fidelity and privacy protection.</p>
 
       <img src="assets/figures/mobility-chain.svg" alt="An individual travel chain: home, work, shop, home" class="fig">
 
@@ -83,11 +83,11 @@
       </ul>
 
       <ul class="tag-row">
+        <li>Travel behavior</li>
         <li>Travel surveys</li>
-        <li>Mobile location data</li>
         <li>Travel chains</li>
         <li>Synthetic populations</li>
-        <li>Privacy preservation</li>
+        <li>Privacy-preserving data synthesis</li>
       </ul>
     </section>
 
@@ -95,7 +95,7 @@
     <section class="thread t-safety" id="traffic-safety">
       <span class="bar"></span>
       <h2>Traffic Safety &amp; Operations</h2>
-      <p>Combining empirical data, AI, and traffic simulation to assess crash risk, predict hazardous interactions, and improve transportation system operations. Crash records are the ground truth for safety, but they are rare, lagging, and silent about the near-misses that precede them; microscopic simulation produces conflicts in abundance but has no claim to realism on its own. I build hybrid frameworks in which each corrects the other — crash data anchors the model where observations exist, and simulation extends risk estimates into conditions not yet observed. Related work covers hazardous driving indicators, child-pedestrian trajectory prediction, and LiDAR-based traffic measurement.</p>
+      <p>My work integrates observed crash data with simulation-derived traffic conflict measures to analyze crash risk under conditions with limited observed outcomes. Crash records provide observed safety outcomes, while microscopic traffic simulation supports the analysis of conflicts and operational conditions that may not be sufficiently represented in historical data. Related research addresses hazardous driving indicators, pedestrian trajectory prediction, and lane-level traffic-state estimation using vehicle-mounted LiDAR.</p>
 
       <img src="assets/figures/crash-risk.svg" alt="Crash risk estimated over a road network grid" class="fig">
 
@@ -109,11 +109,11 @@
       </ul>
 
       <ul class="tag-row">
-        <li>Crash risk</li>
+        <li>Crash risk analysis</li>
         <li>Surrogate safety measures</li>
-        <li>Microsimulation</li>
+        <li>Traffic conflicts</li>
         <li>Vulnerable road users</li>
-        <li>LiDAR sensing</li>
+        <li>Traffic-state estimation</li>
       </ul>
     </section>
 
@@ -133,6 +133,6 @@
   </footer>
 </div>
 
-<script src="assets/script.js?v=3"></script>
+<script src="assets/script.js?v=4"></script>
 </body>
 </html>

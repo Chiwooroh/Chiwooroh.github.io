@@ -254,7 +254,11 @@ img { max-width: 100%; height: auto; }
   margin: 8px 0 0;
   font-size: 15.5px;
   color: var(--ink-2);
+  /* Two roughly even lines rather than a single orphaned word. */
+  text-wrap: balance;
 }
+
+.profile-tagline .sep { color: var(--line); padding: 0 3px; }
 
 .profile-location {
   margin: 2px 0 0;
