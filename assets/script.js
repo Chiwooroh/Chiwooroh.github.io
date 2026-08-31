@@ -80,8 +80,11 @@
       '(<code>python3 -m http.server</code>).</p>';
   }
 
+  // Bump when a file under data/ changes, so browsers do not serve a stale copy.
+  var DATA_V = "2026-09-01";
+
   function getJSON(path, cb, el, what) {
-    fetch(url(path))
+    fetch(url(path) + "?v=" + DATA_V)
       .then(function (r) {
         if (!r.ok) throw new Error(r.status);
         return r.json();
@@ -178,7 +181,7 @@
         selectedEl.innerHTML = data
           .filter(function (p) { return p.selected; })
           .slice(0, 3)
-          .map(function (p) { return pubHTML(p, false); })
+          .map(function (p) { return pubHTML(p, true); })
           .join("");
       }
 

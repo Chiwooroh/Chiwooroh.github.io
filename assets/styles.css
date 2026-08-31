@@ -473,9 +473,9 @@ img { max-width: 100%; height: auto; }
 @media (min-width: 900px) {
   .thread {
     display: grid;
-    /* The figures are wide diagrams carrying text, so they take the larger
-       share; the paragraph still holds a comfortable 60 characters. */
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+    /* The figures are wide diagrams carrying text, so they get a little more
+       room than a square figure would need, without taking over the row. */
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
     column-gap: 40px;
     align-items: start;
   }
@@ -507,8 +507,35 @@ img { max-width: 100%; height: auto; }
 }
 
 .emp {
-  padding: 18px 0;
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 0 24px;
+  padding: 20px 0;
   border-bottom: 1px solid var(--line-soft);
+}
+
+.emp-logo { padding-top: 3px; }
+.emp-logo img { width: 100%; height: auto; display: block; }
+
+/* The marks are dark ink on transparency, so they need a light plate to sit
+   on once the page goes dark. */
+:root[data-theme="dark"] .emp-logo img {
+  background: #fff;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .emp-logo img {
+    background: #fff;
+    border-radius: 4px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 560px) {
+  .emp { grid-template-columns: 1fr; gap: 12px 0; }
+  .emp-logo { width: 68px; padding-top: 0; }
 }
 
 .emp:last-child { border-bottom: none; }

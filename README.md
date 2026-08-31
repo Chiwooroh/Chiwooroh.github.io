@@ -20,11 +20,12 @@ assets/
   Chiwoo_Roh_CV.pdf   Linked from every page
   profile.jpg         Hero photo
   favicon*.png/.ico   Carried over from the old site
+  logos/              Institution marks used on the Employment page
   figures/            Publication and section figures
 data/
   news.json           News items (newest first is enforced in code)
   publications.json   All publications
-  projects.json       Funded projects
+  projects.json       Funded projects (USD figures are converted, see the page lead)
 ```
 
 ## Updating content
@@ -42,6 +43,9 @@ You should almost never need to touch HTML.
 ```
 
 `date` is used for sorting (`YYYY-MM`), `label` is what readers see.
+
+After editing anything under `data/`, bump `DATA_V` at the top of `assets/script.js`
+so browsers do not keep serving the copy they already have.
 
 **Add a publication** — add to `data/publications.json`:
 
