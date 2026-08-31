@@ -113,8 +113,5 @@ deleted from history.
 - The site is English-only. There is no language toggle.
 - Both light and dark themes are defined at the token level in `:root`. Never write
   a color literal in a component rule — add or reuse a token instead.
-- The shell is 880px (`--w`); running text is capped separately at 540px (`--prose`),
-  which is about 70 characters in Libre Franklin. Set that in px, not `ch` — the "0"
-  glyph is much wider than an average character, so `66ch` renders near 95 characters.
-- Pages that are mostly prose (research.html) put `class="narrow"` on `<main>` so the
-  headings and rules stop where the text does.
+- Every page runs to the same 880px shell (`--w`): section rules and the text under
+  them share one measure, so no page ends short of its own dividers.
