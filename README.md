@@ -8,7 +8,8 @@ Personal academic site — plain static HTML/CSS/JS. No Jekyll, no build step.
 index.html            Home — photo, bio, research interests, news, selected publications, awards, education
 research.html         Research — three topics, each with a figure and narrative
 publications.html     Full publication list with filter tabs
-employment.html       Research positions, research visits, and teaching
+employment.html       Research positions and research visits
+teaching.html         Lecturing and teaching assistantships
 projects.html         Funded projects and patents
 news.html             Full news archive
 .nojekyll             Tells GitHub Pages to serve files as-is (skips Jekyll)
