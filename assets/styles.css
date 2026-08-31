@@ -383,6 +383,132 @@ img { max-width: 100%; height: auto; }
 
 .interest-card p { font-size: 12.5px; color: var(--ink-3); margin: 0; line-height: 1.45; }
 
+/* ---------- research threads ---------- */
+/* Numbered because the page really is three enumerated threads, not decoration. */
+.thread {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  gap: 0 22px;
+  padding: 34px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.thread:last-of-type { border-bottom: none; }
+
+@media (max-width: 620px) {
+  .thread { grid-template-columns: 1fr; gap: 6px; }
+}
+
+.thread-no {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  padding-top: 4px;
+}
+
+.thread-body { min-width: 0; }
+
+.thread-body h2 {
+  font-family: var(--serif);
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: -.015em;
+  text-transform: none;
+  color: var(--ink);
+  border: none;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.thread-body > p { margin: 0 0 16px; }
+
+.rep-label {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin: 20px 0 6px;
+}
+
+.rep-list { list-style: none; margin: 0; padding: 0; }
+
+.rep-list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line-soft);
+  font-size: 14.5px;
+}
+
+.rep-list li:last-child { border-bottom: 1px solid var(--line-soft); }
+
+.rp-title { color: var(--ink-2); }
+.rp-title .me { border-bottom-width: 1px; }
+
+.rp-venue {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-3);
+  flex: none;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 560px) {
+  .rep-list li { flex-direction: column; gap: 2px; }
+  .rp-venue { text-align: left; }
+}
+
+.tag-row {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag-row li {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink-3);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+
+.thread .fig { margin: 4px 0 18px; max-width: 380px; }
+
+/* Funding strip at the foot of the research page */
+.fund {
+  margin-top: 40px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.fund-label {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin: 0 0 8px;
+}
+
+.fund-list {
+  font-size: 13.5px;
+  color: var(--ink-2);
+  margin: 0;
+}
+
+.fund-list span { color: var(--ink-3); padding: 0 6px; }
+
 /* ---------- employment ---------- */
 .page-lead {
   margin: -4px 0 0;
