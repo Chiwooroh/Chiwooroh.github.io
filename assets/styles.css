@@ -196,7 +196,9 @@ img { max-width: 100%; height: auto; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 42%;
+  /* The desktop frame is taller than the image, so only the X here matters there.
+     The Y keeps the head in frame when the mobile 4:5 box crops vertically. */
+  object-position: 50% 15%;
   display: block;
 }
 

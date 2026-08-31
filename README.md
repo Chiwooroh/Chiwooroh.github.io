@@ -75,6 +75,8 @@ You should almost never need to touch HTML.
    on mobile it becomes 4:5 — a replacement works best as a portrait crop near 0.55
    aspect with the subject centered horizontally and the face in the upper third.
    Drop it in at the same path and bump the `?v=` on the `<img>` in `index.html`.
+   `object-position` on `.profile-photo img` decides which part survives the mobile
+   4:5 crop — lower the Y percentage if a new photo's head gets cut off there.
 3. **CV.** `assets/Chiwoo_Roh_CV.pdf` is a copy of the August 2026 version. Re-copy it
    whenever the CV changes.
 
