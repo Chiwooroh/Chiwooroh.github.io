@@ -397,7 +397,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .emp {
-  padding: 22px 0;
+  padding: 18px 0;
   border-bottom: 1px solid var(--line-soft);
 }
 
@@ -410,13 +410,26 @@ img { max-width: 100%; height: auto; }
   gap: 16px;
 }
 
-.emp-org {
+.emp .emp-org {
   font-family: var(--sans);
   font-size: 16px;
   font-weight: 600;
+  letter-spacing: 0;
   color: var(--ink);
   margin: 0;
 }
+
+/* "Lecturer" / "Teaching Assistant" inside the Teaching section */
+.section h3.sub-head {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  color: var(--ink);
+  margin: 18px 0 4px;
+}
+
+.section h3.sub-head:first-of-type { margin-top: 6px; }
 
 .emp-where,
 .emp-when {
