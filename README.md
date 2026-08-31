@@ -6,7 +6,6 @@ Personal academic site — plain static HTML/CSS/JS. No Jekyll, no build step.
 
 ```
 index.html            Home — photo, bio, research interests, news, selected publications, awards, education
-                      (no contact block: the email button and location sit in the hero)
 research.html         Research — three topics, each with a figure and narrative
 publications.html     Full publication list with filter tabs
 employment.html       Research positions and research visits
@@ -67,7 +66,6 @@ so browsers do not keep serving the copy they already have.
 - `type` — `journal` | `conference` | `review`. This drives the home page counters,
   the filter tabs, and the order of the full list: journal articles, then manuscripts
   under review, then conference papers, each sorted by year within its group.
-  The home page's "Research projects" counter comes from `data/projects.json`.
 - `**Name**` in `authors` renders your own name highlighted with an amber underline
 - `selected: true` puts it in the home page's three-item Selected Publications block
   (only the first three selected entries are shown, in file order)

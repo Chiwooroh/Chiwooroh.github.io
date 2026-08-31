@@ -772,39 +772,6 @@ h3.sub-head:first-of-type { margin-top: 6px; }
   background: var(--accent-soft);
 }
 
-/* ---------- stats ---------- */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-@media (max-width: 620px) { .stats { grid-template-columns: repeat(2, 1fr); } }
-
-.stat { background: var(--ground); padding: 13px 14px; }
-
-.stat .v {
-  font-family: var(--serif);
-  font-weight: 700;
-  font-size: 24px;
-  color: var(--ink);
-  font-variant-numeric: tabular-nums;
-  line-height: 1;
-}
-
-.stat .k {
-  font-family: var(--mono);
-  font-size: 10.5px;
-  letter-spacing: .07em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-  margin-top: 6px;
-}
-
 /* ---------- projects / patents ---------- */
 .entry {
   padding: 16px 0;

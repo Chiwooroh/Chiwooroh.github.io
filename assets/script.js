@@ -185,11 +185,6 @@
           .join("");
       }
 
-      ["journal", "review", "conference"].forEach(function (t) {
-        var el = document.getElementById("stat-" + t);
-        if (el) el.textContent = data.filter(function (p) { return p.type === t; }).length;
-      });
-
       if (listEl) {
         var draw = function (kind) {
           if (kind !== "all") {
@@ -222,12 +217,9 @@
   /* ---------------- projects ---------------- */
   function renderProjects() {
     var el = document.getElementById("project-list");
-    var stat = document.getElementById("stat-projects");
-    if (!el && !stat) return;
+    if (!el) return;
 
     getJSON("data/projects.json", function (data) {
-      if (stat) stat.textContent = data.length;
-      if (!el) return;
       el.innerHTML = data.map(function (p) {
         return '<div class="entry">' +
           "<h3>" + p.title + "</h3>" +
@@ -240,7 +232,7 @@
             "<dt>Role</dt><dd>" + p.role + "</dd>" +
           "</dl></div>";
       }).join("");
-    }, el || stat, "projects");
+    }, el, "projects");
   }
 
   /* ---------------- footer ---------------- */
