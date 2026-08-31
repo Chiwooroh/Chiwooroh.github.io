@@ -15,7 +15,7 @@ assets/
   styles.css          Entire design system (color tokens, type, layout)
   script.js           Theme toggle, copy-email, JSON rendering
   Chiwoo_Roh_CV.pdf   Linked from every page
-  profile.jpg         Hero photo (4:5 crop of images/chiwoo.png from the old site)
+  profile.jpg         Hero photo
   favicon*.png/.ico   Carried over from the old site
   figures/            Publication and section figures
 data/
@@ -57,8 +57,9 @@ You should almost never need to touch HTML.
 }
 ```
 
-- `type` — `journal` | `conference` | `review` (drives the filter tabs and the
-  "Journal articles" / "Conference papers" counters on the home page)
+- `type` — `journal` | `conference` | `review`. This drives the home page counters,
+  the filter tabs, and the order of the full list: journal articles, then manuscripts
+  under review, then conference papers, each sorted by year within its group.
 - `**Name**` in `authors` renders your own name highlighted with an amber underline
 - `selected: true` puts it in the home page's three-item Selected Publications block
   (only the first three selected entries are shown, in file order)
@@ -69,10 +70,11 @@ You should almost never need to touch HTML.
 1. **Publication figures.** `assets/figures/*.svg` are placeholder diagrams drawn to
    stand in for the real thing. Export the actual figures from your papers at roughly
    1200×740 and point each entry's `figure` at them.
-2. **Profile photo.** `assets/profile.jpg` is a crop of the mountain photo from the
-   old site. In the hero it stretches to match the height of the text beside it, so
-   the two columns end level — a replacement should be a portrait shot with the
-   subject centered horizontally. Drop it in at the same path; no CSS change needed.
+2. **Profile photo.** In the hero, `assets/profile.jpg` stretches to match the height
+   of the text beside it, so the two columns end level. That frame is roughly 1:2, and
+   on mobile it becomes 4:5 — a replacement works best as a portrait crop near 0.55
+   aspect with the subject centered horizontally and the face in the upper third.
+   Drop it in at the same path and bump the `?v=` on the `<img>` in `index.html`.
 3. **CV.** `assets/Chiwoo_Roh_CV.pdf` is a copy of the August 2026 version. Re-copy it
    whenever the CV changes.
 

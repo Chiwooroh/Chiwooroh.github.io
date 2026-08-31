@@ -156,7 +156,15 @@
     return out.join("");
   }
 
+  // Journal articles first, then manuscripts under review, then conference papers.
+  var TYPE_LABEL = {
+    journal: "Journal articles",
+    review: "Under review",
+    conference: "Conference papers"
+  };
+
   function byYearDesc(a, b) { return b.year - a.year; }
+
 
   function renderPublications() {
     var selectedEl = document.getElementById("pub-selected");
@@ -172,16 +180,26 @@
           .join("");
       }
 
-      var jc = document.getElementById("stat-journal");
-      var cc = document.getElementById("stat-conference");
-      if (jc) jc.textContent = data.filter(function (p) { return p.type === "journal"; }).length;
-      if (cc) cc.textContent = data.filter(function (p) { return p.type === "conference"; }).length;
+      ["journal", "review", "conference"].forEach(function (t) {
+        var el = document.getElementById("stat-" + t);
+        if (el) el.textContent = data.filter(function (p) { return p.type === t; }).length;
+      });
 
       if (listEl) {
         var draw = function (kind) {
-          var rows = data.filter(function (p) { return kind === "all" || p.type === kind; })
-                         .sort(byYearDesc);
-          listEl.innerHTML = rows.map(function (p) { return pubHTML(p, true); }).join("");
+          if (kind !== "all") {
+            var rows = data.filter(function (p) { return p.type === kind; }).sort(byYearDesc);
+            listEl.innerHTML = rows.map(function (p) { return pubHTML(p, true); }).join("");
+            return;
+          }
+          // "All" keeps the three kinds as separate, labelled blocks.
+          listEl.innerHTML = ["journal", "review", "conference"].map(function (t) {
+            var rows = data.filter(function (p) { return p.type === t; }).sort(byYearDesc);
+            if (!rows.length) return "";
+            return '<h2 class="pub-group">' + TYPE_LABEL[t] +
+              '<span class="pub-count">' + rows.length + "</span></h2>" +
+              rows.map(function (p) { return pubHTML(p, true); }).join("");
+          }).join("");
         };
         draw("all");
         Array.prototype.forEach.call(document.querySelectorAll(".filters button"), function (b) {

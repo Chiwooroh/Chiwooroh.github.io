@@ -458,6 +458,33 @@ img { max-width: 100%; height: auto; }
 .badge.award { background: var(--amber-soft); color: var(--amber); }
 .badge.review { background: var(--panel-2); color: var(--ink-3); }
 
+/* group heading inside the full publication list */
+.pub-group {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 7px;
+  margin: 34px 0 4px;
+}
+
+.pub-group:first-child { margin-top: 8px; }
+
+.pub-count {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .06em;
+  color: var(--ink-3);
+  text-transform: none;
+  font-variant-numeric: tabular-nums;
+}
+
 /* compact list variant (publications.html) */
 .pub.compact { padding: 11px 0; }
 .pub.compact .pub-fig { display: none; }
