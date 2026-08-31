@@ -462,11 +462,11 @@ img { max-width: 100%; height: auto; }
   padding: 3px 8px;
 }
 
-/* Wide screens split each thread: argument on the left, figure and keywords
-   on the right, so the row fills the shell without 150-character lines. */
-.thread-main > p:first-child { margin-top: 0; }
-.thread-side .fig { margin: 4px 0 18px; }
-.thread-side .tag-row { margin: 0; }
+/* Above 900px the opening paragraph and the figure share a row, and the
+   selected work runs the full width beneath them. */
+.thread-lede > p { margin: 0 0 16px; }
+.thread-figure .fig { margin: 4px 0 18px; }
+.thread-work .tag-row { margin-top: 18px; }
 
 @media (min-width: 900px) {
   .thread {
@@ -477,11 +477,15 @@ img { max-width: 100%; height: auto; }
   }
 
   .thread .bar,
-  .thread h2 { grid-column: 1 / -1; }
-  .thread-main { grid-column: 1; }
-  .thread-side { grid-column: 2; }
+  .thread h2,
+  .thread-work { grid-column: 1 / -1; }
 
-  .thread-side .fig { width: 100%; max-width: none; margin: 4px 0 20px; }
+  .thread-lede { grid-column: 1; }
+  .thread-figure { grid-column: 2; }
+
+  .thread-lede > p { margin-bottom: 0; }
+  .thread-figure .fig { width: 100%; max-width: none; margin: 4px 0 0; }
+  .thread-work .rep-label:first-child { margin-top: 26px; }
 }
 
 /* ---------- employment ---------- */

@@ -116,6 +116,6 @@ deleted from history.
   a color literal in a component rule — add or reuse a token instead.
 - Every page runs to the same 1160px shell (`--w`) with 32px gutters, 20px on small
   screens. Section rules and the content under them share one measure.
-- Research threads split into two columns above 900px — argument on the left, figure
-  and keywords on the right — so the wide shell gets used without stretching a
-  paragraph to 150 characters.
+- A research thread is three blocks: `.thread-lede`, `.thread-figure` and
+  `.thread-work`. Above 900px the first two share a row and the work list runs the
+  full width beneath them; below that they stack.
