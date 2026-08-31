@@ -208,6 +208,7 @@ img { max-width: 100%; height: auto; }
 
 .social-row {
   display: flex;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -252,10 +253,9 @@ img { max-width: 100%; height: auto; }
 
 .profile-tagline {
   margin: 8px 0 0;
-  font-size: 15.5px;
+  /* Sized so the role and the three areas hold one line beside the photo. */
+  font-size: 14px;
   color: var(--ink-2);
-  /* Two roughly even lines rather than a single orphaned word. */
-  text-wrap: balance;
 }
 
 .profile-tagline .sep { color: var(--line); padding: 0 3px; }
