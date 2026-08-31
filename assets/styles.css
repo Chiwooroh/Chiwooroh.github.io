@@ -23,7 +23,11 @@
   --sans: "Libre Franklin", system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
-  --w: 720px;
+  --w: 880px;
+  /* Running text stays near 70 characters even though the shell is wider.
+     Set in px, not ch: the "0" glyph in Libre Franklin is far wider than an
+     average character, so 66ch would render closer to 95 characters. */
+  --prose: 540px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -177,7 +181,7 @@ img { max-width: 100%; height: auto; }
 
 .profile-media {
   flex: none;
-  width: 236px;
+  width: 260px;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -185,7 +189,7 @@ img { max-width: 100%; height: auto; }
 
 .profile-photo {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
   border-radius: 12px;
   overflow: hidden;
   background: var(--panel-2);
@@ -323,7 +327,16 @@ img { max-width: 100%; height: auto; }
   letter-spacing: -.01em;
 }
 
-.lede { margin: 0 0 22px; color: var(--ink-2); }
+.lede { margin: 0 0 22px; color: var(--ink-2); max-width: var(--prose); }
+
+/* Narrative paragraphs sitting directly in a section. Structured content
+   (lists, publication rows, employment entries) still uses the full width. */
+.section > p { max-width: var(--prose); }
+.page-lead { max-width: var(--prose); }
+
+/* Pages that are mostly running text narrow the whole column — headings and
+   rules included — so nothing ends short of the line beside it. */
+main.narrow { max-width: var(--prose); }
 
 .note { font-size: 13.5px; color: var(--ink-3); }
 .note a { text-decoration: none; }
