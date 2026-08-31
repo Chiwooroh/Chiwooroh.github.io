@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 186" width="300" height="186" role="img" aria-label="Individual travel chain: home, work, shop, home">
+  <path d="M28 134H272" stroke="#9aa7b4" stroke-width="2" opacity=".5"/>
+  <path d="M36 134C60 82 84 82 108 134" fill="none" stroke="#c9803a" stroke-width="3"/>
+  <path d="M108 134C144 70 156 70 192 134" fill="none" stroke="#c9803a" stroke-width="3"/>
+  <path d="M192 134C220 94 236 94 264 134" fill="none" stroke="#c9803a" stroke-width="3"/>
+  <g fill="#4a7fc1">
+    <circle cx="36" cy="134" r="8"/><circle cx="108" cy="134" r="8"/>
+    <circle cx="192" cy="134" r="8"/><circle cx="264" cy="134" r="8"/>
+  </g>
+  <g fill="#8894a2" font-size="15" font-family="IBM Plex Mono, ui-monospace, monospace" text-anchor="middle">
+    <text x="36" y="166">H</text><text x="108" y="166">W</text><text x="192" y="166">S</text><text x="264" y="166">H</text>
+  </g>
+</svg>

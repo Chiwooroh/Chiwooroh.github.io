@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 186" width="300" height="186" role="img" aria-label="Vehicle trajectories on a grid">
+  <g stroke="#9aa7b4" stroke-width="1" opacity=".35">
+    <path d="M0 46H300M0 93H300M0 140H300M60 0V186M120 0V186M180 0V186M240 0V186"/>
+  </g>
+  <path d="M8 158C60 150 88 118 124 101 168 81 208 89 292 41" fill="none" stroke="#4a7fc1" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M8 170C68 166 100 142 140 121 184 99 232 109 292 69" fill="none" stroke="#4a7fc1" stroke-width="2.2" stroke-linecap="round" opacity=".5"/>
+  <path d="M8 142C52 130 80 98 116 77 160 53 220 65 292 21" fill="none" stroke="#c9803a" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="292" cy="41" r="4.6" fill="#4a7fc1"/>
+  <circle cx="292" cy="21" r="4.6" fill="#c9803a"/>
+</svg>

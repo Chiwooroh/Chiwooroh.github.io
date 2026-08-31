@@ -1,89 +1,108 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# chiwooroh.github.io
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+Personal academic site — plain static HTML/CSS/JS. No Jekyll, no build step.
 
-# Getting Started
+## Structure
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
-
-See more info at https://academicpages.github.io/
-
-## Running locally
-
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
-
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and open `.gitignore` then add `vendor` inside it.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
-
-```bash
-docker compose up
+```
+index.html            Home — bio, research interests, news, selected publications, awards, education
+research.html         Research — three topics, each with a figure and narrative
+publications.html     Full publication list with filter tabs
+projects.html         Funded projects, patents, teaching, skills
+news.html             Full news archive
+.nojekyll             Tells GitHub Pages to serve files as-is (skips Jekyll)
+assets/
+  styles.css          Entire design system (color tokens, type, layout)
+  script.js           Theme toggle, copy-email, JSON rendering
+  Chiwoo_Roh_CV.pdf   Linked from every page
+  profile.jpg         Hero photo (4:5 crop of images/chiwoo.png from the old site)
+  favicon*.png/.ico   Carried over from the old site
+  figures/            Publication and section figures
+data/
+  news.json           News items (newest first is enforced in code)
+  publications.json   All publications
+  projects.json       Funded projects
 ```
 
-You should now be able to access the website from `localhost:4000`.
+## Updating content
 
-# Maintenance
+You should almost never need to touch HTML.
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+**Add a news item** — prepend to `data/news.json`:
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+```json
+{
+  "date": "2026-03",
+  "label": "Mar 2026",
+  "text": "Paper accepted to <strong>Transportation Research Part C</strong>."
+}
+```
 
-## Bugfixes and enhancements
+`date` is used for sorting (`YYYY-MM`), `label` is what readers see.
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+**Add a publication** — add to `data/publications.json`:
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+```json
+{
+  "type": "journal",
+  "year": 2026,
+  "selected": true,
+  "figure": "assets/figures/my-figure.jpg",
+  "badge": "TRB",
+  "award": "Best Paper Award",
+  "title": "Paper title",
+  "authors": "**Roh, C.**, & Won, M.",
+  "venue": "Journal name, 45(2)",
+  "links": { "paper": "https://...", "code": "https://..." }
+}
+```
 
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+- `type` — `journal` | `conference` | `review` (drives the filter tabs and the
+  "Journal articles" / "Conference papers" counters on the home page)
+- `**Name**` in `authors` renders your own name highlighted with an amber underline
+- `selected: true` puts it in the home page's three-item Selected Publications block
+  (only the first three selected entries are shown, in file order)
+- `badge`, `award`, `figure`, and `links` are all optional
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+## Still worth replacing
+
+1. **Publication figures.** `assets/figures/*.svg` are placeholder diagrams drawn to
+   stand in for the real thing. Export the actual figures from your papers at roughly
+   1200×740 and point each entry's `figure` at them.
+2. **Profile photo.** `assets/profile.jpg` is a 4:5 crop of the mountain photo from
+   the old site. A headshot would read better at 148px wide — drop one in at the same
+   path and nothing else needs to change.
+3. **CV.** `assets/Chiwoo_Roh_CV.pdf` is a copy of the August 2026 version. Re-copy it
+   whenever the CV changes.
+
+## Previewing locally
+
+`fetch()` does not work over `file://`, so the JSON-driven sections will show an
+error if you open the HTML directly. Run a server instead:
+
+```bash
+python3 -m http.server 8791
+```
+
+Then open <http://localhost:8791>.
+
+## Deploying
+
+These files live at the root of `Chiwooroh/chiwooroh.github.io` on the `master`
+branch, which is what GitHub Pages serves. `.nojekyll` stops Pages from trying to
+build the old AcademicPages Jekyll site.
+
+The previous AcademicPages site is preserved on the `legacy` branch — nothing was
+deleted from history.
+
+## Design notes
+
+- Cobalt `#1b4d8c` is the structural color: links, current nav item, accents.
+- Sodium amber `#a85e1b` is used in exactly two places — your own name in an author
+  list, and awards. Keeping it scarce is what makes it readable at a glance.
+- Type: Source Serif 4 (name, section headings), Libre Franklin (body),
+  IBM Plex Mono (dates, labels, data).
+- The site is English-only. There is no language toggle.
+- Both light and dark themes are defined at the token level in `:root`. Never write
+  a color literal in a component rule — add or reuse a token instead.
+- Body width is capped at 720px (`--w`) so running text stays near 65 characters.

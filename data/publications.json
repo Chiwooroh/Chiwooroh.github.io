@@ -1,0 +1,236 @@
+[
+  {
+    "type": "conference",
+    "year": 2026,
+    "selected": true,
+    "figure": "assets/figures/driving-behavior.svg",
+    "badge": "TRB",
+    "title": "Contextual Modeling of Real-World Driving Behavior with Large Language Models and Realistic Reproduction in Traffic Simulation",
+    "authors": "**Roh, C.**, Cho, S., Won, M., & So, J.",
+    "venue": "Transportation Research Board (TRB) 105th Annual Meeting, Washington, DC, United States",
+    "links": {}
+  },
+  {
+    "type": "journal",
+    "year": 2026,
+    "selected": true,
+    "figure": "assets/figures/mobility-chain.svg",
+    "title": "Synthesizing Human Mobility Patterns Using Large Language Models — A Sejong City Case Study",
+    "authors": "**Roh, C.**, & Won, M.",
+    "venue": "Journal of Korean Society of Transportation, 45(2)",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2025,
+    "selected": true,
+    "figure": "assets/figures/crash-risk.svg",
+    "badge": "ITSC",
+    "title": "A Hybrid Traffic Crash Risk Analysis Modeling of Crash Data-Driven Analysis and Microscopic Simulations",
+    "authors": "**Roh, C.**, Cho, S., Park, H., & So, J.",
+    "venue": "2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC), Gold Coast, Australia",
+    "links": {}
+  },
+
+  {
+    "type": "journal",
+    "year": 2026,
+    "title": "A Methodological Framework for Driving Behavior Analysis Based on Real-World Trajectory Data",
+    "authors": "You, J., **Roh, C.**, Kim, J., Lee, E., & So, J.",
+    "venue": "International Journal of Highway Engineering, 28(1)",
+    "links": {}
+  },
+  {
+    "type": "journal",
+    "year": 2024,
+    "title": "Comparative Analysis of the 3D Object Detection Performance of LiDAR Sensors for Traffic Monitoring",
+    "authors": "Cho, S., **Roh, C.**, You, S., & So, J.",
+    "venue": "International Journal of Highway Engineering, 26(5), 143–150",
+    "links": {}
+  },
+  {
+    "type": "journal",
+    "year": 2024,
+    "title": "Analysis of Automation Level Characteristics of Autonomous Driving Simulation Research",
+    "authors": "Kim, H., Kim, J., Lee, S., & **Roh, C.**",
+    "venue": "Journal of the Korean Society of Intelligent Transport Systems, 23(6), 366–381",
+    "links": {}
+  },
+
+  {
+    "type": "conference",
+    "year": 2026,
+    "title": "Development of a Method for Synthesis of Individual-Level Travel Chains Using Large Language Models",
+    "authors": "**Roh, C.**, & Won, M.",
+    "venue": "2026 Korean Society of ITS Spring Conference, Jeju, South Korea",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2026,
+    "badge": "TRB",
+    "title": "A Hybrid Framework for Traffic Crash Risk Analysis Using Crash Data and Microscopic Simulations",
+    "authors": "**Roh, C.**, Cho, S., Park, H., Park, J., & So, J.",
+    "venue": "Transportation Research Board (TRB) 105th Annual Meeting, Washington, DC, United States",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2026,
+    "badge": "TRB",
+    "title": "LiDAR on the Move: Extracting Lane-Level Traffic Indicators from Autonomous Vehicles",
+    "authors": "Cho, S., Ryoo, S., **Roh, C.**, Lee, S., Betz, J., Margreiter, M., & So, J.",
+    "venue": "Transportation Research Board (TRB) 105th Annual Meeting, Washington, DC, United States",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2026,
+    "badge": "TRB",
+    "title": "Multi-Modal Trajectory Prediction of Child Pedestrians Using a Unified Transformer Model",
+    "authors": "You, S., Park, H., **Roh, C.**, Cho, S., & So, J.",
+    "venue": "Transportation Research Board (TRB) 105th Annual Meeting, Washington, DC, United States",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2025,
+    "badge": "ITSC",
+    "title": "Monitoring and Measurement Estimation Using LiDAR Sensors on Autonomous Vehicles",
+    "authors": "Cho, S., Ryoo, S., **Roh, C.**, Lee, S., & So, J.",
+    "venue": "2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC), Gold Coast, Australia",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2025,
+    "title": "Synthesizing Human Mobility Patterns Using Retrieval-Augmented LLMs: A Sejong City Case Study",
+    "authors": "**Roh, C.**, Lee, J., & Won, M.",
+    "venue": "2025 Korean Society of Transportation Fall Conference, Jeju, South Korea",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2025,
+    "award": "Best Paper Award",
+    "title": "Clustering-Based Aggressive Driving Analysis and LLM-Driven Trajectory Generation",
+    "authors": "**Roh, C.**, & So, J.",
+    "venue": "2025 Suwon ITS Asia-Pacific Forum, Suwon, South Korea",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2025,
+    "title": "LLM-Driven Trajectory Synthesis and Driving Behavior Analysis",
+    "authors": "**Roh, C.**, Cho, S., & So, J.",
+    "venue": "2025 Korean Society of ITS Spring Conference, Jeju, South Korea",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2025,
+    "title": "Analysis of Traffic Flow Changes Due to Abnormal Vehicle Stops in Incident Situations: A Microscopic Approach to Spatial Impact Zones",
+    "authors": "You, S., Park, H., **Roh, C.**, Cho, S., & So, J.",
+    "venue": "2025 Korean Society of ITS Spring Conference, Jeju, South Korea",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2025,
+    "award": "Best Paper Award",
+    "title": "Personality on the Road: Driving Behavior Analysis and Trajectory Generation with LLMs",
+    "authors": "**Roh, C.**, Lee, E., & So, J.",
+    "venue": "2025 Korean Society of Transportation Spring Conference, Seoul, South Korea",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2025,
+    "title": "A Proof-of-Concept Study for LiDAR-Based Traffic Measure Estimation: Traffic Density Estimation and Vehicle Trajectory Extraction",
+    "authors": "Cho, S., **Roh, C.**, You, S., & So, J.",
+    "venue": "2025 Korean Society of Transportation Spring Conference, Seoul, South Korea",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2024,
+    "title": "Cooperation and Competition Among Vehicles in Autonomous Driving Merge Scenario: A Proof-of-Concept Study",
+    "authors": "Lee, Y., Kim, J., **Roh, C.**, & So, J.",
+    "venue": "2024 Korean Society of ITS Fall Conference, Gangneung, South Korea",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2024,
+    "title": "Enhancing Traffic Safety Through Predicting Child Pedestrian Trajectories: A Study Using Transformer-Based Deep Learning Approach",
+    "authors": "You, S., Park, H., **Roh, C.**, Cho, S., & So, J.",
+    "venue": "2024 Korean Society of Transportation Fall Conference, Gangneung, South Korea",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2024,
+    "badge": "TRB",
+    "title": "Extracting Traffic Crash Information from Imbalanced-Unstructured Traffic Crash Description Texts Using a Text Classification Modeling Technique",
+    "authors": "Seo, Y., Park, J., Oh, G., Kim, H., **Roh, C.**, Hu, J., & So, J.",
+    "venue": "Transportation Research Board (TRB) 103rd Annual Meeting, Washington, DC, United States",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2023,
+    "title": "A Study on Evaluation of Autonomous Vehicle Legal Compliance Using Traffic Simulation",
+    "authors": "**Roh, C.**, Lee, E., & So, J.",
+    "venue": "2023 Korean Society of ITS Fall Conference, Jeju, South Korea",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2023,
+    "title": "A Study on Evaluation Indicators for Compliance with Autonomous Vehicle Legislation: Focusing on the Speed Limit Adherence Indicator",
+    "authors": "**Roh, C.**, Lee, E., & So, J.",
+    "venue": "2023 Joint Conference of the Korean Society of Transportation & Korea Planning Association, Busan, South Korea",
+    "links": {}
+  },
+  {
+    "type": "conference",
+    "year": 2023,
+    "title": "Development of Self-Driving Vehicle Evaluation Interface Using Traffic Simulation",
+    "authors": "**Roh, C.**, Lee, E., & So, J.",
+    "venue": "2023 Korean Society of ITS Spring Conference, Yeosu, South Korea",
+    "links": {}
+  },
+
+  {
+    "type": "review",
+    "year": 2026,
+    "title": "Development of a Method for Synthesis of Individual-Level Travel Chains Using Large Language Models",
+    "authors": "**Roh, C.**, & Won, M.",
+    "venue": "Journal of Korean Society of Intelligent Transport Systems",
+    "links": {}
+  },
+  {
+    "type": "review",
+    "year": 2026,
+    "title": "AVs as Mobile Traffic Sensors: Lane-Level Traffic State and Risk Indicator Extraction Using Vehicle-Mounted LiDAR",
+    "authors": "Cho, S., Ryoo, S., **Roh, C.**, Lee, S., Betz, J., Margreiter, M., & So, J.",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "links": {}
+  },
+  {
+    "type": "review",
+    "year": 2026,
+    "title": "Predicting Child Pedestrian Behavior with Transformer-Based Multi-Agent Trajectory Prediction",
+    "authors": "You, S., Park, H., Cho, S., **Roh, C.**, & So, J.",
+    "venue": "Transportation Research Record",
+    "links": {}
+  },
+  {
+    "type": "review",
+    "year": 2026,
+    "title": "Predicting Traffic Crash Severity: A BERT-Based Modeling Approach for Integrating Structured and Unstructured Data",
+    "authors": "Park, H., **Roh, C.**, Hu, J., Jia, W., Lee, J., Park, J., & So, J.",
+    "venue": "Accident Analysis and Prevention",
+    "links": {}
+  }
+]
