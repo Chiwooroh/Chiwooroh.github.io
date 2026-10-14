@@ -277,6 +277,20 @@ img { max-width: 100%; height: auto; }
 .profile-bio p:last-child { margin-bottom: 0; }
 .profile-bio strong { color: var(--ink); font-weight: 600; }
 
+/* A personal line under the bio. Amber is the page's scarce colour — it marks
+   your own name and your awards — so it carries this without raising its voice. */
+.profile-creed {
+  margin: 18px 0 0;
+  padding: 2px 0 2px 16px;
+  border-left: 2px solid var(--amber);
+  max-width: 62ch;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 16.5px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
 @media (max-width: 620px) {
   .profile { flex-direction: column; gap: 20px; }
   .profile-media { width: 100%; max-width: 260px; }
